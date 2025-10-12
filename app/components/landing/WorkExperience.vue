@@ -4,6 +4,10 @@ import type { IndexCollectionItem } from '@nuxt/content'
 defineProps<{
   page: IndexCollectionItem
 }>()
+
+function isPath(v?: string) {
+  return !!v && (v.startsWith('/') || v.startsWith('http') || v.endsWith('.svg'))
+}
 </script>
 
 <template>
@@ -43,7 +47,15 @@ defineProps<{
               :style="{ color: experience.company.color }"
             >
               <span class="font-medium">{{ experience.company.name }}</span>
-              <UIcon :name="experience.company.logo" />
+              <UIcon v-if="!isPath(experience.company.logo)" :name="experience.company.logo" />
+              <img
+                v-else
+                :src="experience.company.logo"
+                :alt="`${experience.company.name} logo`"
+                width="20"
+                height="20"
+                style="display:inline-block;vertical-align:middle;"
+              />
             </div>
           </ULink>
         </Motion>

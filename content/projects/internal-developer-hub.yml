@@ -1,6 +1,6 @@
-title: Internal Developer Hub (Nuxt Team)
-description: Designed and built key components for an internal documentation and tooling hub for Nuxt developers, focusing on improving developer experience and streamlining access to resources.
-image: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80 # Example image related to code/development
+title: Automatisation du scrapping des stages LinkedIn
+description: Création d'un workflow N8N automatisé pour scrapper, trier et organiser tous les stages disponibles sur LinkedIn dans la région de Genève en fichier Excel pour l'école CREA.
+image: https://5c2a8dd0.delivery.rocketcdn.me/wp-content/uploads/2025/09/Design-sans-titre-11-1.png
 url: "#"
-tags: ["Developer Tools", "UX Design", "Nuxt", "Design System", "Internal Tools"]
+tags: ["N8N", "Automatisation"]
 date: "2024"

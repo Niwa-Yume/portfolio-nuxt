@@ -1,12 +1,12 @@
 seo:
-  title: "Emma Thompson - UX/UI Designer"
-  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Emma Thompson UX/UI Designer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
+  title: "Julien Castro - Artisan du Numérique"
+  description: "J'optimise votre temps en créant des solutions digitales sur-mesure. Je suis Julien Castro, partenaire de confiance pour les entreprises et particuliers exigeants. Ma spécialité : concevoir des sites web et applications élégants, et automatiser vos processus pour vous libérer des tâches chronophages."
+title: "Julien Castro - Artisan du Numérique"
+description: "J'optimise votre temps en créant des solutions digitales sur-mesure. Je suis Julien Castro, partenaire de confiance pour les entreprises et particuliers exigeants. Ma spécialité : concevoir des sites web et applications élégants, et automatiser vos processus pour vous libérer des tâches chronophages."
 hero:
   links:
-    - label: "Use this template"
-      to: https://github.com/nuxt-ui-templates/portfolio
+    - label: "Voir mon Github"
+      to: https://github.com/Niwa-Yume
       color: "neutral"
   images:
     - src: /hero/random-1.avif
@@ -28,93 +28,104 @@ hero:
     - src: /hero/random-9.avif
       alt: Random Image 9
 about:
-  title: "About Me"
+  title: "A propos de moi"
   description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+    Mon parcours, de l’horlogerie de luxe chez Rolex à la finance chez FlowBank, en passant par Infomaniak et son univers technologique, m’a appris une chose essentielle : le temps est l’actif le plus précieux.
+    C’est pourquoi aujourd’hui, en tant qu’architecte de solutions digitales, ma mission est simple
+    - vous en faire gagner !
 experience:
-  title: Work Experience
+  title: Expérience professionel
   items:
-    - position: "Brand Designer at"
-      date: "2023 - Present"
+    - position: "Consultant chargé de projet"
+      date: "été 2025"
       company:
-        name: Nuxt
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "https://nuxt.com"
+        name: Rolex
+        logo: "/logo/rolex.png"
+        url: "http://www.rolex.com"
         color: "#00DC82"
-    - position: "Assets Designer at"
-      date: "2022 - 2023"
+    - position: "Stagiaire Développeur"
+      date: "Sep 2024 - Jan 2025"
       company:
-        name: Raycast
+        name: Rolex
+        logo: "/logo/rolex.png"
+        url: "http://www.rolex.com"
+        color: "#00DC82"
+    - position: "Fondateur"
+      date: "Sep 2023 - Jun 2025"
+      company:
+        name: Noctinium
         logo: "i-simple-icons-raycast"
-        url: "https://raycast.com"
-        color: "#FF6363"
-    - position: "Senior UX/UI Designer at"
-      date: "2020 - 2021"
+        url: "https://noctinium.com"
+        color: "#A259FF"
+    - position: "Spécialiste Ksuite"
+      date: "Oct 2023 - Jan 2024"
       company:
-        name: Linear
-        logo: "i-simple-icons-linear"
+        name: Infomaniak
+        logo: "/logo/k-icon-blue-background.svg"
         url: "https://linear.app"
         color: "#5E6AD2"
 testimonials:
-  - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
+  - quote: |
+      Julien a fait preuve d’une grande autonomie et d’un excellent esprit d’équipe lors de son stage chez Rolex. Il a su apprendre rapidement, résoudre les problèmes par lui-même et s’investir pleinement dans chaque mission. Sa curiosité et sa bonne volonté ont été très appréciées au sein de l’équipe. Je recommande Julien sans hésitation pour toute future opportunité.
     author:
-      name: 'Sarah Chen'
-      description: 'Product Director at Bloom Finance'
+      name: "Jean-Christophe Plessis"
+      description: "Senior Software Developer Team Lead chez Rolex"
       avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless."
+        src: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+  - quote: |
+      Julien a su comprendre l'identité de The Head Spa et la retranscrire parfaitement dans notre nouveau webdesign. Son écoute, sa créativité et sa réactivité ont permis de donner une nouvelle dimension à notre site. Je recommande vivement Julien pour tout projet digital !
     author:
-      name: 'Michael Rodriguez'
-      description: 'Co-founder of Wavelength Music'
+      name: "Céline"
+      description: "Fondatrice de The Head Spa"
       avatar:
-        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed."
+        src: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+  - quote: |
+      Grâce à l’automatisation mise en place par Julien, la gestion des conventions de stage à CREA est devenue simple et rapide. Son expertise sur n8n et son accompagnement ont permis de gagner un temps précieux et d’éviter les erreurs manuelles. Un vrai plus pour notre équipe pédagogique !
     author:
-      name: 'Dr. Aisha Johnson'
-      description: 'Chief Innovation Officer at GreenTech Solutions'
+      name: "L'équipe pédagogique de CREA"
+      description: "École CREA Genève"
       avatar:
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+        src: 'https://yt3.googleusercontent.com/ekca7k8LWS06F9qn3Qm7asW0kaP2_eeJtSTLWxNmvioDINssdiS4hxKoztGvtEZM15eUiKK16w=s900-c-k-c0x00ffffff-no-rj'
+        srcset: 'https://yt3.googleusercontent.com/ekca7k8LWS06F9qn3Qm7asW0kaP2_eeJtSTLWxNmvioDINssdiS4hxKoztGvtEZM15eUiKK16w=s900-c-k-c0x00ffffff-no-rj'
 blog:
-  title: "Latest Articles"
-  description: "Some of my recent thoughts"
+  title: "Les derniers articles"
+  description: "Certaines de mes pensées"
 faq:
-  title: Frequently Asked Questions
-  description: Answers to common questions about my process and services.
+  title: Questions fréquentes
+  description: Réponses aux questions courantes sur mon processus et mes services.
   categories:
-    - title: Services & Process
+    - title: Services & Processus
       questions:
-        - label: What services do you offer?
+        - label: Quels services proposez-vous ?
           content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
+            Je suis spécialisé dans le développement web, application et en Automatisation des processus. Cela inclut la recherche utilisateur, la création de wireframes, le prototypage interactif, la conception d’interfaces intuitives, la réalisation de sites web et d’applications web responsives. Mon objectif est de créer des expériences digitales fluides, de la conception au déploiement.
+        - label: Quelle est votre méthodologie de travail ?
           content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
+            Mon approche est collaborative et itérative, comprenant généralement les étapes suivantes : découverte & recherche, idéation & prototypage, tests utilisateurs, design visuel, et collaboration étroite avec les équipes de développement lors de l’implémentation. J’adapte le processus selon les besoins du projet, en gardant toujours l’utilisateur au centre des solutions.
+        - label: Travaillez-vous avec des startups ?
           content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
-    - title: Pricing & Timelines
+            Absolument ! J’aime accompagner les startups pour façonner leur vision produit et créer des interfaces conviviales dès le départ. Je peux adapter ma méthode à l’environnement dynamique et rapide des startups.
+    - title: Tarifs & Délais
       questions:
-        - label: How much does a project typically cost?
+        - label: Combien coûte généralement un projet ?
           content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive UX/UI design and front-end development projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific design tasks, my day rate is $700.
-        - label: What are your payment terms?
+            Les coûts varient selon la portée, la complexité, les fonctionnalités et le délai. Pour des projets complets de design UX/UI et développement front-end, mes prestations débutent autour de 1 000 CHF, avec une moyenne entre 2 000 CHF et 20 000 CHF. Pour du conseil ou des missions spécifiques, mon tarif journalier est de 600 CHF.
+        - label: Quelles sont vos conditions de paiement ?
           content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
-        - label: How long does a typical project take?
+            Je demande généralement un acompte de 40 % pour planifier et démarrer le projet, le solde de 60 % étant dû à la livraison et validation finale. Les paiements se font par virement bancaire ou via Stripe.
+        - label: Combien de temps dure un projet en moyenne ?
           content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
+            Les délais dépendent fortement de la taille et de la complexité du projet. Les petits projets prennent 3 à 4 semaines, tandis que les plus ambitieux peuvent durer de 2 à 4 mois. Je fournis toujours un planning détaillé après la phase de découverte initiale.
+        - label: Proposez-vous des forfaits ou un accompagnement continu ?
           content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
+            Oui, pour les clients ayant besoin d’un suivi régulier, de développement de nouvelles fonctionnalités ou de maintenance, je propose des forfaits mensuels adaptés. Discutons-en si cela vous intéresse !
+    - title: À propos de moi
       questions:
-        - label: What do you enjoy most about your work?
+        - label: Qu’est-ce qui vous passionne le plus dans votre métier ?
           content: |
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
+            J’adore relever le défi de résoudre des problèmes complexes grâce à la technologie et l'automatisation. Voir les utilisateurs interagir avec mes créations et les trouver vraiment utiles et agréables est très gratifiant. Faire le lien entre les besoins des utilisateurs et les possibilités techniques, c’est ce qui me motive au quotidien.
+        - label: Quels sont vos loisirs en dehors du travail ?
           content: |
-            When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+            Quand je ne conçois ou ne code pas, j’aime explorer la culture japonaise, découvrir de nouveaux manga et webtoon et faire randonner dans la région. Je suis aussi passionné de champignons, finance, F1, blockchain et je contribue parfois à des projets.
