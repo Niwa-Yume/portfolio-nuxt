@@ -20,7 +20,7 @@ useHead({
 useSeoMeta({
   titleTemplate: '%s - Julien portfolio',
   ogImage: '/screen-site.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
+  twitterImage: '/screen-site.png',
   twitterCard: 'summary_large_image'
 })
 
