@@ -9,23 +9,23 @@ hero:
       to: https://github.com/Niwa-Yume
       color: "neutral"
   images:
-    - src: /hero/random-1.avif
+    - src: https://cryptomcdo.com/wp-content/uploads/Bitcoin_.webp
       alt: Random Image 1
-    - src: /hero/random-2.avif
+    - src: https://images.pexels.com/photos/29406740/pexels-photo-29406740.jpeg?cs=srgb&dl=pexels-jonathanborba-29406740.jpg&fm=jpg
       alt: Random Image 2
-    - src: /hero/random-3.avif
+    - src: https://wallpapers.com/images/hd/ufc-4k-1auces3g7disgqtt.jpg
       alt: Random Image 3
-    - src: /hero/random-4.avif
+    - src: https://gameranx.com/wp-content/uploads/2016/03/Dark-Souls-3-4K-Wallpaper.jpg
       alt: Random Image 4
-    - src: /hero/random-5.avif
+    - src: https://media.gq-magazine.co.uk/photos/6138798a50db6a7355282929/16:9/w_1920,h_1080,c_limit/080921_Foulkes.jpg
       alt: Random Image 5
-    - src: /hero/random-6.avif
+    - src: https://images.unsplash.com/photo-1586165368502-1bad197a6461?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hlc3N8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000
       alt: Random Image 6
-    - src: /hero/random-7.avif
+    - src: https://plus.unsplash.com/premium_photo-1664299231810-29d1caf6f753?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG90YWdlcnxlbnwwfHwwfHx8MA%3D%3D
       alt: Random Image 7
-    - src: /hero/random-8.avif
+    - src: https://w0.peakpx.com/wallpaper/863/398/HD-wallpaper-grateful-miyamoto-musashi-slam-dunk-takehiko-inoue-vagabond.jpg
       alt: Random Image 8
-    - src: /hero/random-9.avif
+    - src: https://wallpaper.forfun.com/fetch/47/47733d0f9ee194a5f58b5ef776269265.jpeg
       alt: Random Image 9
 about:
   title: "A propos de moi"
