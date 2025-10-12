@@ -18,7 +18,7 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Julien portfolio',
+  titleTemplate: 'Julien portfolio',
   ogImage: '/screen-site.png',
   twitterImage: '/screen-site.png',
   twitterCard: 'summary_large_image'
