@@ -24,6 +24,10 @@ export default defineAppConfig({
   },
   footer: {
     credits: `Built with Nuxt UI • © ${new Date().getFullYear()}`,
-    colorMode: false
+    colorMode: false,
+    links: [
+      { label: 'GitHub', to: 'https://github.com/Niwa-Yume', icon: 'i-simple-icons-github' },
+      { label: 'Email', to: 'mailto:julien.castro@protonmail.com', icon: 'i-lucide-mail' }
+    ]
   }
 })
