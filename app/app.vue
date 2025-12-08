@@ -17,10 +17,14 @@ useHead({
   }
 })
 
+// Construit une URL absolue pour l’image d’aperçu (utile pour Discord/Twitter)
+const requestUrl = useRequestURL()
+const ogImageUrl = `${requestUrl.origin}/screen-site.png?v=20251117`
+
 useSeoMeta({
   titleTemplate: 'Julien portfolio',
-  ogImage: '/screen-site.png',
-  twitterImage: '/screen-site.png',
+  ogImage: ogImageUrl,
+  twitterImage: ogImageUrl,
   twitterCard: 'summary_large_image'
 })
 
