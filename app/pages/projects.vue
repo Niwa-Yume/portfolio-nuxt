@@ -10,9 +10,17 @@ if (!page.value) {
   })
 }
 
-const { data: projects } = await useAsyncData('projects', () => {
-  return queryCollection('projects').all()
+const { data: projects } = await useAsyncData('projects', async () => {
+  const list = await queryCollection('projects').all()
+  return list.sort((a, b) => {
+    const da = a?.date ? new Date(a.date).getTime() : 0
+    const db = b?.date ? new Date(b.date).getTime() : 0
+    return db - da // plus récent d'abord
+  })
 })
+
+import { computed } from 'vue'
+const projectsList = computed(() => projects?.value ?? [])
 
 const { global } = useAppConfig()
 
@@ -59,17 +67,17 @@ useSeoMeta({
       }"
     >
       <Motion
-        v-for="(project, index) in projects"
-        :key="project.title"
+        v-for="(project, index) in projectsList"
+        :key="project.title ?? index"
         :initial="{ opacity: 0, transform: 'translateY(10px)' }"
         :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
         :transition="{ delay: 0.2 * index }"
         :in-view-options="{ once: true }"
       >
         <UPageCard
-          :title="project.title"
-          :description="project.description"
-          :to="project.url"
+          :title="project.title ?? ''"
+          :description="project.description ?? ''"
+          :to="project?.url ?? ''"
           orientation="horizontal"
           variant="naked"
           :reverse="index % 2 === 1"
@@ -80,12 +88,12 @@ useSeoMeta({
         >
           <template #leading>
             <span class="text-sm text-muted">
-              {{ new Date(project.date).getFullYear() }}
+              {{ project?.date ? new Date(project.date).getFullYear() : '' }}
             </span>
           </template>
           <template #footer>
             <ULink
-              :to="project.url"
+              :to="project?.url ?? ''"
               class="text-sm text-primary flex items-center"
             >
               Voir le projet
@@ -96,8 +104,8 @@ useSeoMeta({
             </ULink>
           </template>
           <img
-            :src="project.image"
-            :alt="project.title"
+            :src="project?.image ?? ''"
+            :alt="project.title ?? ''"
             class="object-cover w-full h-48 rounded-lg"
           >
         </UPageCard>
