@@ -119,6 +119,20 @@ export default defineContentConfig({
         }))
       })
     }),
+    offers: defineCollection({
+      type: 'page',
+      source: 'offers.yml',
+      schema: z.object({
+        links: z.array(createButtonSchema()),
+        offers: z.array(z.object({
+          title: z.string(),
+          impact: z.string(),
+          leverage: z.string(),
+          description: z.string(),
+          ctaLabel: z.string().optional()
+        }))
+      })
+    }),
     about: defineCollection({
       type: 'page',
       source: 'about.yml',

@@ -1,0 +1,21 @@
+title: Des offres claires pour aller vite et bien
+description: J'interviens sur la stratégie, le design et le développement pour livrer des résultats concrets, pas juste des maquettes.
+links:
+  - label: Discuter de mon besoin
+    color: primary
+offers:
+  - title: Refonte premium de sites
+    impact: Image de marque plus forte
+    leverage: Process UX/UI orienté conversion et performance
+    description: Refonte complète de l'expérience, du design et de la stack pour aligner ton site avec ton positionnement et augmenter l'impact business.
+    ctaLabel: Demander une refonte
+  - title: Automatisations & dashboards
+    impact: Plus de marge, moins d'opérations manuelles
+    leverage: Automatisations robustes et suivi KPI en temps réel
+    description: J'automatise les tâches répétitives et je centralise tes indicateurs dans des dashboards clairs pour accélérer les décisions.
+    ctaLabel: Automatiser mon activité
+  - title: Mini-applications / MVP
+    impact: Validation marché en quelques semaines
+    leverage: Produit livrable vite, proprement et évolutif
+    description: Je conçois et développe un MVP fiable, testable et évolutif pour valider ton idée rapidement avec de vrais utilisateurs.
+    ctaLabel: Lancer mon MVP
