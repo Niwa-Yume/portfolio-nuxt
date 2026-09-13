@@ -28,22 +28,22 @@ function isPath(v?: string) {
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
           :transition="{ delay: 0.4 + 0.2 * index }"
           :in-view-options="{ once: true }"
-          class="text-muted flex items-center text-nowrap gap-2"
+          class="text-muted flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-2"
         >
-          <p class="text-sm">
+          <p class="text-sm whitespace-normal sm:whitespace-nowrap">
             {{ experience.date }}
           </p>
-          <USeparator />
+          <USeparator class="hidden sm:block" />
           <ULink
-            class="flex items-center gap-1"
+            class="flex flex-col items-start gap-1 sm:flex-row sm:items-center"
             :to="experience.company.url"
             target="_blank"
           >
-            <span class="text-sm">
+            <span class="text-sm whitespace-normal">
               {{ experience.position }}
             </span>
             <div
-              class="inline-flex items-center gap-1"
+              class="inline-flex items-center gap-1 whitespace-normal"
               :style="{ color: experience.company.color }"
             >
               <span class="font-medium">{{ experience.company.name }}</span>

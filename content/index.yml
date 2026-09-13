@@ -37,6 +37,13 @@ experience:
   title: Expérience professionel
   items:
     - position: "Consultant chargé de projet"
+      date: "Fév 2026 - Juil 2026"
+      company:
+        name: Audemars Piguet
+        logo: "i-lucide-briefcase-business"
+        url: "https://www.audemarspiguet.com/"
+        color: "#9A8A5B"
+    - position: "Full stack developer"
       date: "été 2025"
       company:
         name: Rolex
