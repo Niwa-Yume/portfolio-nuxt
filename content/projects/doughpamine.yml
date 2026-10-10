@@ -1,6 +1,7 @@
 title: Doughpamine
 description: Projet de PWA gamification du levain (pensée avant tout mobile)
-image: "/Projet/doughpamine.png"
+image: "/projects/doughpamine.jpg"
 url: "https://doughpamine.vercel.app"
 tags: ["Projet Gamejam", "Phaser", "Gaming", "scolaire"]
-date: '2026'
+date: "2026"
+category: perso

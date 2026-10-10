@@ -6,6 +6,13 @@ const { footer, global } = useAppConfig()
 defineProps<{
   page: IndexCollectionItem
 }>()
+
+// Même animation d'entrée qu'avant, factorisée ; seul le délai varie
+const reveal = (delay: number) => ({
+  initial: { scale: 1.1, opacity: 0, filter: 'blur(20px)' },
+  animate: { scale: 1, opacity: 1, filter: 'blur(0px)' },
+  transition: { duration: 0.6, delay }
+})
 </script>
 
 <template>
@@ -17,22 +24,7 @@ defineProps<{
     }"
   >
     <template #headline>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: 0.1
-        }"
-      >
+      <Motion v-bind="reveal(0.1)">
         <UColorModeAvatar
           class="size-18 ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
           :light="global.picture?.light!"
@@ -45,89 +37,35 @@ defineProps<{
     </template>
 
     <template #title>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: 0.1
-        }"
-      >
+      <Motion v-bind="reveal(0.1)">
         {{ page.title }}
       </Motion>
     </template>
 
     <template #description>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: 0.3
-        }"
-      >
-        {{ page.description }}
+      <Motion v-bind="reveal(0.3)">
+        <p class="inline-flex items-center gap-1 text-sm text-muted">
+          <UIcon
+            name="i-lucide-map-pin"
+            class="size-4"
+            aria-hidden="true"
+          />
+          {{ page.hero.location }}
+        </p>
+        <p class="mt-2">
+          {{ page.description }}
+        </p>
       </Motion>
     </template>
 
     <template #links>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: 0.5
-        }"
-      >
-        <div
-          v-if="page.hero.links"
-          class="flex items-center gap-2"
-        >
-          <UButton v-bind="page.hero.links[0]" />
+      <Motion v-bind="reveal(0.5)">
+        <div class="flex flex-wrap items-center justify-center gap-2">
           <UButton
-            :color="global.available ? 'success' : 'error'"
-            variant="ghost"
-            class="gap-2"
-            :to="global.available ? global.meetingLink : ''"
-            :label="global.available ? 'Disponible pour un nouveau projet' : 'Pas disponible pour l\'instant'"
-          >
-            <template #leading>
-              <span class="relative flex size-2">
-                <span
-                  class="absolute inline-flex size-full rounded-full opacity-75"
-                  :class="global.available ? 'bg-success animate-ping' : 'bg-error'"
-                />
-                <span
-                  class="relative inline-flex size-2 scale-90 rounded-full"
-                  :class="global.available ? 'bg-success' : 'bg-error'"
-                />
-              </span>
-            </template>
-          </UButton>
+            v-for="(link, index) of page.hero.links"
+            :key="index"
+            v-bind="link"
+          />
         </div>
       </Motion>
 
@@ -135,21 +73,7 @@ defineProps<{
         <Motion
           v-for="(link, index) of footer?.links"
           :key="index"
-
-          :initial="{
-            scale: 1.1,
-            opacity: 0,
-            filter: 'blur(20px)'
-          }"
-          :animate="{
-            scale: 1,
-            opacity: 1,
-            filter: 'blur(0px)'
-          }"
-          :transition="{
-            duration: 0.6,
-            delay: 0.5 + index * 0.1
-          }"
+          v-bind="reveal(0.5 + index * 0.1)"
         >
           <UButton
             v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }"

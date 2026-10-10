@@ -19,3 +19,40 @@ offers:
     leverage: Produit livrable vite, proprement et évolutif
     description: Je conçois et développe un MVP fiable, testable et évolutif pour valider ton idée rapidement avec de vrais utilisateurs.
     ctaLabel: Lancer mon MVP
+faq:
+  title: Questions fréquentes
+  description: Réponses aux questions courantes sur mon processus et mes services.
+  categories:
+    - title: Services & Processus
+      questions:
+        - label: Quels services proposez-vous ?
+          content: |
+            Je suis spécialisé dans le développement web, application et en Automatisation des processus. Cela inclut la recherche utilisateur, la création de wireframes, le prototypage interactif, la conception d’interfaces intuitives, la réalisation de sites web et d’applications web responsives. Mon objectif est de créer des expériences digitales fluides, de la conception au déploiement.
+        - label: Quelle est votre méthodologie de travail ?
+          content: |
+            Mon approche est collaborative et itérative, comprenant généralement les étapes suivantes : découverte & recherche, idéation & prototypage, tests utilisateurs, design visuel, et collaboration étroite avec les équipes de développement lors de l’implémentation. J’adapte le processus selon les besoins du projet, en gardant toujours l’utilisateur au centre des solutions.
+        - label: Travaillez-vous avec des startups ?
+          content: |
+            Absolument ! J’aime accompagner les startups pour façonner leur vision produit et créer des interfaces conviviales dès le départ. Je peux adapter ma méthode à l’environnement dynamique et rapide des startups.
+    - title: Tarifs & Délais
+      questions:
+        - label: Combien coûte généralement un projet ?
+          content: |
+            Les coûts varient selon la portée, la complexité, les fonctionnalités et le délai. Pour des projets complets de design UX/UI et développement front-end, mes prestations débutent autour de 1 000 CHF, avec une moyenne entre 2 000 CHF et 20 000 CHF. Pour du conseil ou des missions spécifiques, mon tarif journalier est de 600 CHF.
+        - label: Quelles sont vos conditions de paiement ?
+          content: |
+            Je demande généralement un acompte de 40 % pour planifier et démarrer le projet, le solde de 60 % étant dû à la livraison et validation finale. Les paiements se font par virement bancaire ou via Stripe.
+        - label: Combien de temps dure un projet en moyenne ?
+          content: |
+            Les délais dépendent fortement de la taille et de la complexité du projet. Les petits projets prennent 3 à 4 semaines, tandis que les plus ambitieux peuvent durer de 2 à 4 mois. Je fournis toujours un planning détaillé après la phase de découverte initiale.
+        - label: Proposez-vous des forfaits ou un accompagnement continu ?
+          content: |
+            Oui, pour les clients ayant besoin d’un suivi régulier, de développement de nouvelles fonctionnalités ou de maintenance, je propose des forfaits mensuels adaptés. Discutons-en si cela vous intéresse !
+    - title: À propos de moi
+      questions:
+        - label: Qu’est-ce qui vous passionne le plus dans votre métier ?
+          content: |
+            J’adore relever le défi de résoudre des problèmes complexes grâce à la technologie et l'automatisation. Voir les utilisateurs interagir avec mes créations et les trouver vraiment utiles et agréables est très gratifiant. Faire le lien entre les besoins des utilisateurs et les possibilités techniques, c’est ce qui me motive au quotidien.
+        - label: Quels sont vos loisirs en dehors du travail ?
+          content: |
+            Quand je ne conçois ou ne code pas, j’aime explorer la culture japonaise, découvrir de nouveaux manga et webtoon et faire de la randonnée dans la région. Je suis aussi passionné de champignons, finance, F1, blockchain et je contribue parfois à des projets.

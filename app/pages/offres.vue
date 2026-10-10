@@ -9,6 +9,8 @@ if (!page.value) {
     fatal: true
   })
 }
+const { global } = useAppConfig()
+
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
   ogTitle: page.value?.seo?.title || page.value?.title,
@@ -38,14 +40,38 @@ function triangleCardClass(index: number, total: number): string {
       }"
     >
       <template #links>
-        <UButton
-          v-if="page.links?.[0]"
-          to="/contact"
-          :label="page.links[0].label"
-          color="success"
-          size="xl"
-          trailing-icon="i-lucide-arrow-right"
-        />
+        <div class="flex flex-wrap items-center gap-2">
+          <UButton
+            v-if="page.links?.[0]"
+            to="/contact"
+            :label="page.links[0].label"
+            color="success"
+            size="xl"
+            trailing-icon="i-lucide-arrow-right"
+          />
+          <!-- Lien Cal.com déplacé depuis le hero de la home -->
+          <UButton
+            :color="global.available ? 'success' : 'error'"
+            variant="ghost"
+            class="gap-2"
+            :to="global.available ? global.meetingLink : undefined"
+            target="_blank"
+            :label="global.available ? 'Disponible pour un nouveau projet' : 'Pas disponible pour l\'instant'"
+          >
+            <template #leading>
+              <span class="relative flex size-2">
+                <span
+                  class="absolute inline-flex size-full rounded-full opacity-75"
+                  :class="global.available ? 'bg-success animate-ping' : 'bg-error'"
+                />
+                <span
+                  class="relative inline-flex size-2 scale-90 rounded-full"
+                  :class="global.available ? 'bg-success' : 'bg-error'"
+                />
+              </span>
+            </template>
+          </UButton>
+        </div>
       </template>
     </UPageHero>
 
@@ -100,6 +126,10 @@ function triangleCardClass(index: number, total: number): string {
           />
         </article>
       </div>
+    </UPageSection>
+
+    <UPageSection :ui="{ container: '!pt-0' }">
+      <LandingFAQ :faq="page.faq" />
     </UPageSection>
   </UPage>
 </template>

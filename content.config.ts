@@ -30,6 +30,21 @@ const createAuthorSchema = () => z.object({
   initials: z.string().optional()
 })
 
+const createFaqSchema = () => z.object({
+  title: z.string(),
+  description: z.string().optional(),
+  categories: z.array(
+    z.object({
+      title: z.string().nonempty(),
+      questions: z.array(
+        z.object({
+          label: z.string().nonempty(),
+          content: z.string().nonempty()
+        })
+      )
+    }))
+})
+
 const createTestimonialSchema = () => z.object({
   quote: z.string(),
   author: createAuthorSchema()
@@ -42,34 +57,28 @@ export default defineContentConfig({
       source: 'index.yml',
       schema: z.object({
         hero: z.object({
+          location: z.string(),
           links: z.array(createButtonSchema())
         }),
         about: createBaseSchema(),
         experience: createBaseSchema().extend({
           items: z.array(z.object({
-            date: z.date(),
+            // Texte libre (« Fév 2026 - Juil 2026 », « été 2025 »)
+            date: z.string(),
             position: z.string(),
+            impact: z.string().optional(),
+            metric: z.string().optional(),
             company: z.object({
               name: z.string(),
-              url: z.string(),
+              url: z.string().optional(),
               logo: z.string().editor({ input: 'icon' }),
-              color: z.string()
+              color: z.string().optional()
             })
           }))
         }),
         testimonials: z.array(createTestimonialSchema()),
-        faq: createBaseSchema().extend({
-          categories: z.array(
-            z.object({
-              title: z.string().nonempty(),
-              questions: z.array(
-                z.object({
-                  label: z.string().nonempty(),
-                  content: z.string().nonempty()
-                })
-              )
-            }))
-        })
+        projects: createBaseSchema(),
+        faq: createFaqSchema()
       })
     }),
     projects: defineCollection({
@@ -78,10 +87,17 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
+        category: z.enum(['produit', 'client', 'perso']),
+        status: z.enum(['En ligne', 'En développement', 'Terminé']).optional(),
+        role: z.string().optional(),
+        metric: z.string().optional(),
+        image: z.string().editor({ input: 'media' }).optional(),
+        url: z.string().optional(),
+        // Stack technique
         tags: z.array(z.string()),
-        date: z.date()
+        date: z.string().optional(),
+        // Ordre d'affichage dans la section (croissant), puis date décroissante
+        order: z.number().optional()
       })
     }),
     pages: defineCollection({
@@ -102,7 +118,8 @@ export default defineContentConfig({
           leverage: z.string(),
           description: z.string(),
           ctaLabel: z.string().optional()
-        }))
+        })),
+        faq: createFaqSchema()
       })
     }),
     about: defineCollection({

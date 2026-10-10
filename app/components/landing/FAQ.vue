@@ -1,16 +1,17 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
 
+// Utilisé sur la home (FAQ recruteur) et sur /offres (FAQ clients)
 const props = defineProps<{
-  page: IndexCollectionItem
+  faq: IndexCollectionItem['faq']
 }>()
 
 const items = computed(() => {
-  return props.page.faq?.categories.map((faq) => {
+  return props.faq.categories.map((category) => {
     return {
-      label: faq.title,
-      key: faq.title.toLowerCase(),
-      questions: faq.questions
+      label: category.title,
+      key: category.title.toLowerCase(),
+      questions: category.questions
     }
   })
 })
@@ -22,19 +23,27 @@ const ui = {
   trigger: 'px-3 py-2 rounded-lg hover:bg-muted/50 data-[state=active]:text-highlighted data-[state=inactive]:text-muted',
   label: 'truncate'
 }
+
+const accordionUi = {
+  item: 'border-none',
+  trigger: 'mb-2 border-0 group px-4 transform-gpu rounded-lg bg-elevated/60 will-change-transform hover:bg-muted/50 text-base',
+  trailingIcon: 'group-data-[state=closed]:rotate-0 group-data-[state=open]:rotate-135 text-base text-muted'
+}
 </script>
 
 <template>
   <UPageSection
-    :title="page.faq.title"
-    :description="page.faq.description"
+    :title="faq.title"
+    :description="faq.description"
     :ui="{
       container: 'px-0 !pt-0 gap-4 sm:gap-4',
       title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
       description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted'
     }"
   >
+    <!-- Une seule catégorie : pas besoin d'onglets -->
     <UTabs
+      v-if="items.length > 1"
       :items
       orientation="horizontal"
       :ui
@@ -44,11 +53,7 @@ const ui = {
           trailing-icon="lucide:plus"
           :items="item.questions"
           :unmount-on-hide="false"
-          :ui="{
-            item: 'border-none',
-            trigger: 'mb-2 border-0 group px-4 transform-gpu rounded-lg bg-elevated/60 will-change-transform hover:bg-muted/50 text-base',
-            trailingIcon: 'group-data-[state=closed]:rotate-0 group-data-[state=open]:rotate-135 text-base text-muted'
-          }"
+          :ui="accordionUi"
         >
           <template #body="{ item: _item }">
             <MDC
@@ -60,5 +65,20 @@ const ui = {
         </UAccordion>
       </template>
     </UTabs>
+    <UAccordion
+      v-else-if="items[0]"
+      trailing-icon="lucide:plus"
+      :items="items[0].questions"
+      :unmount-on-hide="false"
+      :ui="accordionUi"
+    >
+      <template #body="{ item: _item }">
+        <MDC
+          :value="_item.content"
+          unwrap="p"
+          class="px-4"
+        />
+      </template>
+    </UAccordion>
   </UPageSection>
 </template>
