@@ -1,8 +1,9 @@
 title: Lucas Hage
-description: Site vitrine pour un bijoutier, avec prise de rendez-vous et newsletter.
+description: Refonte du site vitrine d'un bijoutier, avec prise de rendez-vous et newsletter.
 category: client
+status: En développement
 # metric: "[À COMPLÉTER : métrique]"
 image: /projects/lucas-hage.jpg
 url: https://lucas-hage.com
-tags: ["WordPress"]
+tags: ["Astro", "React", "Sanity", "Tailwind CSS"]
 order: 1

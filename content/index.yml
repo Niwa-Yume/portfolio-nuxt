@@ -35,7 +35,7 @@ experience:
         color: "#9A8A5B"
     - position: "Full stack developer"
       date: "été 2025"
-      impact: "Modernisation d'une application interne de gestion de la propriété intellectuelle : réécriture du front-end d'AngularJS vers Angular, back-end Spring Boot, reprise des règles métier et tests de non-régression."
+      impact: "Poursuite de la mission de stage pendant deux mois d'été : modernisation de l'application de gestion de la propriété intellectuelle (Angular, Spring Boot)."
       # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Rolex
@@ -70,8 +70,7 @@ experience:
         color: "#5E6AD2"
     - position: "Sales trader"
       # date: "[À COMPLÉTER : dates]"
-      impact: "Assistance clients sur les opérations bancaires et les problèmes informatiques, gestion des tickets et des appels, conseil et formation sur les produits et services financiers."
-      # metric: "[À COMPLÉTER : métrique]"
+      impact: "Conseil et formation des clients sur les produits et services financiers, accompagnement sur les opérations bancaires et gestion des demandes par ticket et par téléphone."
       company:
         name: FlowBank
         logo: "i-lucide-landmark"
@@ -79,7 +78,6 @@ experience:
     - position: "Gestionnaire logistique"
       # date: "[À COMPLÉTER : dates]"
       # impact: "[À COMPLÉTER : impact en une ligne]"
-      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: "OCSIN (État de Genève)"
         logo: "https://www.ge.ch/themes/custom/gech_front/favicon.ico"
