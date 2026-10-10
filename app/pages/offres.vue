@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('offers', () => {
-  return queryCollection('offers').first()
+const { data: page } = await useAsyncData('offres', () => {
+  return queryCollection('offres').first()
 })
 if (!page.value) {
   throw createError({

@@ -8,39 +8,20 @@ hero:
     - label: "Voir mon Github"
       to: https://github.com/Niwa-Yume
       color: "neutral"
-  images:
-    - src: https://cryptomcdo.com/wp-content/uploads/Bitcoin_.webp
-      alt: Random Image 1
-    - src: https://images.pexels.com/photos/29406740/pexels-photo-29406740.jpeg?cs=srgb&dl=pexels-jonathanborba-29406740.jpg&fm=jpg
-      alt: Random Image 2
-    - src: https://wallpapers.com/images/hd/ufc-4k-1auces3g7disgqtt.jpg
-      alt: Random Image 3
-    - src: https://gameranx.com/wp-content/uploads/2016/03/Dark-Souls-3-4K-Wallpaper.jpg
-      alt: Random Image 4
-    - src: https://media.gq-magazine.co.uk/photos/6138798a50db6a7355282929/16:9/w_1920,h_1080,c_limit/080921_Foulkes.jpg
-      alt: Random Image 5
-    - src: https://images.unsplash.com/photo-1586165368502-1bad197a6461?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hlc3N8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000
-      alt: Random Image 6
-    - src: https://plus.unsplash.com/premium_photo-1664299231810-29d1caf6f753?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG90YWdlcnxlbnwwfHwwfHx8MA%3D%3D
-      alt: Random Image 7
-    - src: https://w0.peakpx.com/wallpaper/863/398/HD-wallpaper-grateful-miyamoto-musashi-slam-dunk-takehiko-inoue-vagabond.jpg
-      alt: Random Image 8
-    - src: https://wallpaper.forfun.com/fetch/47/47733d0f9ee194a5f58b5ef776269265.jpeg
-      alt: Random Image 9
 about:
-  title: "A propos de moi"
+  title: "À propos de moi"
   description: |
     Mon parcours, de l’horlogerie de luxe chez Rolex à la finance chez FlowBank, en passant par Infomaniak et son univers technologique, m’a appris une chose essentielle : le temps est l’actif le plus précieux.
     C’est pourquoi aujourd’hui, en tant qu’architecte de solutions digitales, ma mission est simple
     - vous en faire gagner !
 experience:
-  title: Expérience professionel
+  title: Expérience professionnelle
   items:
     - position: "Consultant chargé de projet"
       date: "Fév 2026 - Juil 2026"
       company:
         name: Audemars Piguet
-        logo: "i-lucide-briefcase-business"
+        logo: "https://www.audemarspiguet.com/etc.clientlibs/ap-com/ui/clientlibs/publish/resources/static/favicon-96x96.png"
         url: "https://www.audemarspiguet.com/"
         color: "#9A8A5B"
     - position: "Full stack developer"
@@ -48,20 +29,20 @@ experience:
       company:
         name: Rolex
         logo: "/logo/rolex.png"
-        url: "http://www.rolex.com"
+        url: "https://www.rolex.com/"
         color: "#00DC82"
     - position: "Stagiaire Développeur"
       date: "Sep 2024 - Jan 2025"
       company:
         name: Rolex
         logo: "/logo/rolex.png"
-        url: "http://www.rolex.com"
+        url: "https://www.rolex.com/"
         color: "#00DC82"
     - position: "Fondateur"
       date: "Sep 2023 - Jun 2025"
       company:
         name: Noctinium
-        logo: "i-simple-icons-raycast"
+        logo: "/Projet/logo-noctinium.png"
         url: "https://noctinium.com"
         color: "#A259FF"
     - position: "Spécialiste Ksuite"
@@ -69,7 +50,7 @@ experience:
       company:
         name: Infomaniak
         logo: "/logo/k-icon-blue-background.svg"
-        url: "https://linear.app"
+        url: "https://www.infomaniak.com/"
         color: "#5E6AD2"
 testimonials:
   - quote: |
@@ -77,28 +58,17 @@ testimonials:
     author:
       name: "Jean-Christophe Plessis"
       description: "Senior Software Developer Team Lead chez Rolex"
-      avatar:
-        src: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
   - quote: |
       Julien a su comprendre l'identité de The Head Spa et la retranscrire parfaitement dans notre nouveau webdesign. Son écoute, sa créativité et sa réactivité ont permis de donner une nouvelle dimension à notre site. Je recommande vivement Julien pour tout projet digital !
     author:
       name: "Céline"
       description: "Fondatrice de The Head Spa"
-      avatar:
-        src: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
   - quote: |
       Grâce à l’automatisation mise en place par Julien, la gestion des conventions de stage à CREA est devenue simple et rapide. Son expertise sur n8n et son accompagnement ont permis de gagner un temps précieux et d’éviter les erreurs manuelles. Un vrai plus pour notre équipe pédagogique !
     author:
       name: "L'équipe pédagogique de CREA"
+      initials: "CR"
       description: "École CREA Genève"
-      avatar:
-        src: 'https://yt3.googleusercontent.com/ekca7k8LWS06F9qn3Qm7asW0kaP2_eeJtSTLWxNmvioDINssdiS4hxKoztGvtEZM15eUiKK16w=s900-c-k-c0x00ffffff-no-rj'
-        srcset: 'https://yt3.googleusercontent.com/ekca7k8LWS06F9qn3Qm7asW0kaP2_eeJtSTLWxNmvioDINssdiS4hxKoztGvtEZM15eUiKK16w=s900-c-k-c0x00ffffff-no-rj'
-blog:
-  title: "Les derniers articles"
-  description: "Certaines de mes pensées"
 faq:
   title: Questions fréquentes
   description: Réponses aux questions courantes sur mon processus et mes services.
@@ -135,4 +105,4 @@ faq:
             J’adore relever le défi de résoudre des problèmes complexes grâce à la technologie et l'automatisation. Voir les utilisateurs interagir avec mes créations et les trouver vraiment utiles et agréables est très gratifiant. Faire le lien entre les besoins des utilisateurs et les possibilités techniques, c’est ce qui me motive au quotidien.
         - label: Quels sont vos loisirs en dehors du travail ?
           content: |
-            Quand je ne conçois ou ne code pas, j’aime explorer la culture japonaise, découvrir de nouveaux manga et webtoon et faire randonner dans la région. Je suis aussi passionné de champignons, finance, F1, blockchain et je contribue parfois à des projets.
+            Quand je ne conçois ou ne code pas, j’aime explorer la culture japonaise, découvrir de nouveaux manga et webtoon et faire de la randonnée dans la région. Je suis aussi passionné de champignons, finance, F1, blockchain et je contribue parfois à des projets.

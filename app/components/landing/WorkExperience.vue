@@ -47,14 +47,20 @@ function isPath(v?: string) {
               :style="{ color: experience.company.color }"
             >
               <span class="font-medium">{{ experience.company.name }}</span>
-              <UIcon v-if="!isPath(experience.company.logo)" :name="experience.company.logo" />
-              <img
+              <UIcon
+                v-if="!isPath(experience.company.logo)"
+                :name="experience.company.logo"
+              />
+              <!-- alt vide : le nom de l'entreprise est déjà écrit juste à côté -->
+              <NuxtImg
                 v-else
                 :src="experience.company.logo"
-                :alt="`${experience.company.name} logo`"
+                alt=""
                 width="20"
                 height="20"
-                style="display:inline-block;vertical-align:middle;"
+                densities="x1 x2"
+                loading="lazy"
+                class="inline-block size-5 align-middle object-contain"
               />
             </div>
           </ULink>

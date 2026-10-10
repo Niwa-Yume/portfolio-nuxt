@@ -1,9 +1,16 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
 
+type Author = IndexCollectionItem['testimonials'][number]['author']
+
 defineProps<{
   page: IndexCollectionItem
 }>()
+
+// Pas de photo inventée : initiales dérivées du nom (ou forcées via `initials`)
+function initialsOf(author: Author) {
+  return author.initials ?? author.name.split(/\s+/).map(word => word[0]).join('').slice(0, 2).toUpperCase()
+}
 </script>
 
 <template>
@@ -32,7 +39,9 @@ defineProps<{
         }"
       >
         <UUser
-          v-bind="item.author"
+          :name="item.author.name"
+          :description="item.author.description"
+          :avatar="{ 'text': initialsOf(item.author), 'aria-hidden': 'true' }"
           size="xl"
           class="justify-center"
         />

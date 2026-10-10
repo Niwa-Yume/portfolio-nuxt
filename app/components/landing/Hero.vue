@@ -38,6 +38,8 @@ defineProps<{
           :light="global.picture?.light!"
           :dark="global.picture?.dark!"
           :alt="global.picture?.alt!"
+          width="72"
+          height="72"
         />
       </Motion>
     </template>
@@ -111,7 +113,8 @@ defineProps<{
             variant="ghost"
             class="gap-2"
             :to="global.available ? global.meetingLink : ''"
-            :label="global.available ? 'Disponible pour un nouveau projet' : 'Pas disponible pour l\'instant'">
+            :label="global.available ? 'Disponible pour un nouveau projet' : 'Pas disponible pour l\'instant'"
+          >
             <template #leading>
               <span class="relative flex size-2">
                 <span
@@ -154,37 +157,5 @@ defineProps<{
         </Motion>
       </div>
     </template>
-
-    <UMarquee
-      pause-on-hover
-      class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
-    >
-      <Motion
-        v-for="(img, index) in page.hero.images"
-        :key="index"
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: index * 0.1
-        }"
-      >
-        <NuxtImg
-          width="234"
-          height="234"
-          class="rounded-lg aspect-square object-cover"
-          :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
-          v-bind="img"
-        />
-      </Motion>
-    </UMarquee>
   </UPageHero>
 </template>

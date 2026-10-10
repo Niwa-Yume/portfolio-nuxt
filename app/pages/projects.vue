@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+
 const { data: page } = await useAsyncData('projects-page', () => {
   return queryCollection('pages').path('/projects').first()
 })
@@ -19,7 +21,6 @@ const { data: projects } = await useAsyncData('projects', async () => {
   })
 })
 
-import { computed } from 'vue'
 const projectsList = computed(() => projects?.value ?? [])
 
 const { global } = useAppConfig()
@@ -103,11 +104,16 @@ useSeoMeta({
               />
             </ULink>
           </template>
-          <img
+          <!-- alt vide : le titre du projet est déjà le texte du lien de la carte -->
+          <NuxtImg
             :src="project?.image ?? ''"
-            :alt="project.title ?? ''"
+            alt=""
+            width="400"
+            height="192"
+            densities="x1 x2"
+            loading="lazy"
             class="object-cover w-full h-48 rounded-lg"
-          >
+          />
         </UPageCard>
       </Motion>
     </UPageSection>

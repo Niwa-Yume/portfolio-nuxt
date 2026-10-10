@@ -10,10 +10,11 @@ useHead({
     { key: 'theme-color', name: 'theme-color', content: color }
   ],
   link: [
-    { rel: 'icon', href: '/logo-juju-dev.png' }
+    { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
+    { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'fr'
   }
 })
 
@@ -22,29 +23,12 @@ const requestUrl = useRequestURL()
 const ogImageUrl = `${requestUrl.origin}/screen-site.png?v=20251117`
 
 useSeoMeta({
-  titleTemplate: 'Julien portfolio',
+  // Un titleTemplate sans %s écrasait le titre de toutes les pages
+  titleTemplate: title => title?.includes('Julien Castro') ? title : `${title} · Julien Castro`,
   ogImage: ogImageUrl,
   twitterImage: ogImageUrl,
   twitterCard: 'summary_large_image'
 })
-
-const [{ data: navigation }, { data: files }] = await Promise.all([
-  useAsyncData('navigation', () => {
-    return Promise.all([
-      queryCollectionNavigation('blog')
-    ])
-  }, {
-    transform: data => data.flat()
-  }),
-  useLazyAsyncData('search', () => {
-    return Promise.all([
-      queryCollectionSearchSections('blog')
-    ])
-  }, {
-    server: false,
-    transform: data => data.flat()
-  })
-])
 </script>
 
 <template>
@@ -54,15 +38,5 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
         <NuxtPage />
       </UMain>
     </NuxtLayout>
-
-    <ClientOnly>
-      <LazyUContentSearch
-        :files="files"
-        :navigation="navigation"
-        shortcut="meta_k"
-        :links="navLinks"
-        :fuse="{ resultLimit: 42 }"
-      />
-    </ClientOnly>
   </UApp>
 </template>

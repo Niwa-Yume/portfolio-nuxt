@@ -11,13 +11,9 @@ export const navLinks: NavigationMenuItem[] = [{
 }, {
   label: 'Offres',
   icon: 'i-lucide-briefcase',
-  to: '/offers'
+  to: '/offres'
 }, {
-  label: 'Blog',
-  icon: 'i-lucide-file-text',
-  to: '/blog'
-}, {
-  label: 'à propos de moi',
+  label: 'À propos',
   icon: 'i-lucide-user',
   to: '/about'
 }]

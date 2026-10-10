@@ -1,9 +1,9 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: '/logo-juju-dev.png',
-      light: '/logo-juju-dev.png',
-      alt: 'Ma photo de profil'
+      dark: '/portrait.png',
+      light: '/portrait.png',
+      alt: 'Portrait de Julien Castro'
     },
     meetingLink: 'https://cal.com/julien.castro/30min',
     email: 'julien.castro@protonmail.com',
