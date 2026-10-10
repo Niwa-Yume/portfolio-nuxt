@@ -27,7 +27,7 @@ useSeoMeta({
       <LandingProducts :page />
       <LandingAbout :page />
     </UPageSection>
-    <LandingTestimonials :page />
+    <LandingTestimonials :testimonials="page.testimonials" />
     <LandingFAQ :faq="page.faq" />
   </UPage>
 </template>

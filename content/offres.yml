@@ -1,24 +1,90 @@
-title: Des offres claires pour aller vite et bien
-description: J'interviens sur la stratégie, le design et le développement pour livrer des résultats concrets, pas juste des maquettes.
+seo:
+  title: "Offres freelance — Sites et applications web sur mesure · Julien Castro, Genève"
+  description: "Refonte de sites, maintenance, automatisations et MVP. Un seul interlocuteur à Genève, de la maquette à la mise en ligne. Projets à partir de 1 000 CHF."
+title: Sites et applications web sur mesure, de la maquette à la mise en ligne
+description: Je conçois, développe et maintiens des sites et des outils web pour des marques exigeantes à Genève. Un seul interlocuteur, du premier échange à la mise en ligne, puis dans la durée.
+proof: "Ils m'ont fait confiance : un bijoutier, un spa haut de gamme, un coffee shop horloger, une école."
 links:
-  - label: Discuter de mon besoin
+  - label: Discuter de votre projet
+    to: /contact
     color: primary
+    trailingIcon: i-lucide-arrow-right
 offers:
-  - title: Refonte premium de sites
-    impact: Image de marque plus forte
-    leverage: Process UX/UI orienté conversion et performance
-    description: Refonte complète de l'expérience, du design et de la stack pour aligner votre site avec votre positionnement et augmenter l'impact business.
+  - title: Refonte de site
+    icon: i-lucide-sparkles
+    impact: Une image de marque à la hauteur
+    description: Refonte complète de l'expérience, du design et de la technique pour aligner votre site sur votre positionnement.
+    leverage: Process UX/UI orienté conversion et performance.
+    reference:
+      label: The Head Spa, Lucas Hage
+      to: /projects#clients
     ctaLabel: Demander une refonte
+  - title: Maintenance & support
+    icon: i-lucide-life-buoy
+    impact: Un site à jour, sans y penser
+    description: Mises à jour, corrections, nouvelles fonctionnalités et support au quotidien, sous forme de forfait mensuel adapté à vos besoins.
+    leverage: Un interlocuteur qui connaît déjà votre site.
+    reference:
+      label: Coffee UP
+      to: /projects#clients
+    ctaLabel: Parler d'un forfait
   - title: Automatisations & dashboards
-    impact: Plus de marge, moins d'opérations manuelles
-    leverage: Automatisations robustes et suivi KPI en temps réel
+    icon: i-lucide-workflow
+    impact: Moins d'opérations manuelles
     description: J'automatise les tâches répétitives et je centralise vos indicateurs dans des dashboards clairs pour accélérer les décisions.
+    leverage: Workflows robustes (n8n) et suivi en temps réel.
+    reference:
+      label: Automatisation des stages pour CREA
+      to: /projects#perso
     ctaLabel: Automatiser mon activité
-  - title: Mini-applications / MVP
-    impact: Validation marché en quelques semaines
-    leverage: Produit livrable vite, proprement et évolutif
-    description: Je conçois et développe un MVP fiable, testable et évolutif pour valider votre idée rapidement avec de vrais utilisateurs.
-    ctaLabel: Lancer mon MVP
+  - title: Applications & MVP
+    icon: i-lucide-rocket
+    impact: Une idée testée avec de vrais utilisateurs
+    description: Je conçois et développe une application fiable et évolutive, du front-end à l'API, pour valider votre idée rapidement.
+    leverage: Stack full-stack éprouvée (React, Vue, NestJS, PostgreSQL).
+    reference:
+      label: GVA Watchmaking Guide, MedWay
+      to: /projects#produits
+    ctaLabel: Lancer mon projet
+process:
+  title: Comment je travaille
+  description: Une méthode collaborative et itérative, adaptée à chaque projet.
+  steps:
+    - title: Découverte
+      description: On clarifie vos objectifs, vos utilisateurs et vos contraintes. Je vous remets un planning détaillé.
+    - title: Prototype
+      description: Wireframes et prototype interactif pour valider le parcours avant d'écrire la moindre ligne de code.
+    - title: Design & développement
+      description: Design visuel, développement et tests utilisateurs, avec des points réguliers.
+    - title: Mise en ligne & suivi
+      description: Déploiement, prise en main, puis maintenance et évolutions si vous le souhaitez.
+pricing:
+  title: Tarifs & délais
+  description: "Chaque projet fait l'objet d'un devis. Pour vous donner un ordre d'idée :"
+  items:
+    - label: Projets
+      value: "dès 1 000 CHF"
+      note: "En moyenne entre 2 000 et 20 000 CHF selon la portée."
+    - label: Conseil & missions
+      value: "600 CHF / jour"
+      note: "Pour du conseil ou des missions ponctuelles."
+    - label: Délais
+      value: "3 semaines à 4 mois"
+      note: "3 à 4 semaines pour un petit projet, 2 à 4 mois pour les plus ambitieux."
+  payment: "Acompte de 40 % au démarrage, solde de 60 % à la livraison. Virement bancaire ou Stripe."
+testimonials:
+  - quote: Julien a su comprendre l'identité de The Head Spa et la retranscrire parfaitement dans notre nouveau webdesign. Son écoute, sa créativité et sa réactivité ont permis de donner une nouvelle dimension à notre site. Je recommande vivement Julien pour tout projet digital !
+    author:
+      name: "Céline"
+      description: "Fondatrice de The Head Spa"
+  - quote: Grâce à l’automatisation mise en place par Julien, la gestion des conventions de stage à CREA est devenue simple et rapide. Son expertise sur n8n et son accompagnement ont permis de gagner un temps précieux et d’éviter les erreurs manuelles. Un vrai plus pour notre équipe pédagogique !
+    author:
+      name: "L'équipe pédagogique de CREA"
+      initials: "CR"
+      description: "École CREA Genève"
+cta:
+  title: Un projet en tête ?
+  description: Décrivez-moi votre besoin en quelques lignes. Je vous réponds avec une première estimation et les prochaines étapes.
 faq:
   title: Questions fréquentes
   description: Réponses aux questions courantes sur mon processus et mes services.
@@ -27,10 +93,10 @@ faq:
       questions:
         - label: Quels services proposez-vous ?
           content: |
-            Je suis spécialisé dans le développement web, application et en Automatisation des processus. Cela inclut la recherche utilisateur, la création de wireframes, le prototypage interactif, la conception d’interfaces intuitives, la réalisation de sites web et d’applications web responsives. Mon objectif est de créer des expériences digitales fluides, de la conception au déploiement.
+            Je suis spécialisé dans le développement de sites web, d'applications et dans l'automatisation des processus. Cela inclut la recherche utilisateur, la création de wireframes, le prototypage interactif, la conception d’interfaces intuitives et la réalisation de sites et d’applications web responsives. Mon objectif : des expériences digitales fluides, de la conception au déploiement.
         - label: Quelle est votre méthodologie de travail ?
           content: |
-            Mon approche est collaborative et itérative, comprenant généralement les étapes suivantes : découverte & recherche, idéation & prototypage, tests utilisateurs, design visuel, et collaboration étroite avec les équipes de développement lors de l’implémentation. J’adapte le processus selon les besoins du projet, en gardant toujours l’utilisateur au centre des solutions.
+            Mon approche est collaborative et itérative : découverte & recherche, idéation & prototypage, tests utilisateurs, design visuel, puis développement et mise en ligne. J’adapte le processus selon les besoins du projet, en gardant toujours l’utilisateur au centre des solutions.
         - label: Travaillez-vous avec des startups ?
           content: |
             Absolument ! J’aime accompagner les startups pour façonner leur vision produit et créer des interfaces conviviales dès le départ. Je peux adapter ma méthode à l’environnement dynamique et rapide des startups.
@@ -38,7 +104,7 @@ faq:
       questions:
         - label: Combien coûte généralement un projet ?
           content: |
-            Les coûts varient selon la portée, la complexité, les fonctionnalités et le délai. Pour des projets complets de design UX/UI et développement front-end, mes prestations débutent autour de 1 000 CHF, avec une moyenne entre 2 000 CHF et 20 000 CHF. Pour du conseil ou des missions spécifiques, mon tarif journalier est de 600 CHF.
+            Les coûts varient selon la portée, la complexité, les fonctionnalités et le délai. Mes prestations débutent autour de 1 000 CHF, avec une moyenne entre 2 000 CHF et 20 000 CHF. Pour du conseil ou des missions spécifiques, mon tarif journalier est de 600 CHF.
         - label: Quelles sont vos conditions de paiement ?
           content: |
             Je demande généralement un acompte de 40 % pour planifier et démarrer le projet, le solde de 60 % étant dû à la livraison et validation finale. Les paiements se font par virement bancaire ou via Stripe.
@@ -48,11 +114,3 @@ faq:
         - label: Proposez-vous des forfaits ou un accompagnement continu ?
           content: |
             Oui, pour les clients ayant besoin d’un suivi régulier, de développement de nouvelles fonctionnalités ou de maintenance, je propose des forfaits mensuels adaptés. Discutons-en si cela vous intéresse !
-    - title: À propos de moi
-      questions:
-        - label: Qu’est-ce qui vous passionne le plus dans votre métier ?
-          content: |
-            J’adore relever le défi de résoudre des problèmes complexes grâce à la technologie et l'automatisation. Voir les utilisateurs interagir avec mes créations et les trouver vraiment utiles et agréables est très gratifiant. Faire le lien entre les besoins des utilisateurs et les possibilités techniques, c’est ce qui me motive au quotidien.
-        - label: Quels sont vos loisirs en dehors du travail ?
-          content: |
-            Quand je ne conçois ou ne code pas, j’aime explorer la culture japonaise, découvrir de nouveaux manga et webtoon et faire de la randonnée dans la région. Je suis aussi passionné de champignons, finance, F1, blockchain et je contribue parfois à des projets.

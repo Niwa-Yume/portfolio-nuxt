@@ -8,6 +8,7 @@ const createBaseSchema = () => z.object({
 const createButtonSchema = () => z.object({
   label: z.string(),
   icon: z.string().optional(),
+  trailingIcon: z.string().optional(),
   to: z.string().optional(),
   color: z.enum(['primary', 'neutral', 'success', 'warning', 'error', 'info']).optional(),
   size: z.enum(['xs', 'sm', 'md', 'lg', 'xl']).optional(),
@@ -111,14 +112,26 @@ export default defineContentConfig({
       type: 'page',
       source: 'offres.yml',
       schema: z.object({
+        proof: z.string().optional(),
         links: z.array(createButtonSchema()),
         offers: z.array(z.object({
           title: z.string(),
+          icon: z.string().editor({ input: 'icon' }),
           impact: z.string(),
           leverage: z.string(),
           description: z.string(),
+          reference: z.object({ label: z.string(), to: z.string() }).optional(),
           ctaLabel: z.string().optional()
         })),
+        process: createBaseSchema().extend({
+          steps: z.array(z.object({ title: z.string(), description: z.string() }))
+        }),
+        pricing: createBaseSchema().extend({
+          items: z.array(z.object({ label: z.string(), value: z.string(), note: z.string() })),
+          payment: z.string()
+        }),
+        testimonials: z.array(createTestimonialSchema()),
+        cta: createBaseSchema(),
         faq: createFaqSchema()
       })
     }),
