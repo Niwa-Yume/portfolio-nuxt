@@ -35,7 +35,7 @@ experience:
         color: "#9A8A5B"
     - position: "Full stack developer"
       date: "été 2025"
-      # impact: "[À COMPLÉTER : impact en une ligne]"
+      impact: "Modernisation d'une application interne de gestion de la propriété intellectuelle : réécriture du front-end d'AngularJS vers Angular, back-end Spring Boot, reprise des règles métier et tests de non-régression."
       # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Rolex
@@ -44,7 +44,7 @@ experience:
         color: "#00DC82"
     - position: "Stagiaire Développeur"
       date: "Sep 2024 - Jan 2025"
-      # impact: "[À COMPLÉTER : impact en une ligne]"
+      impact: "Modernisation d'une application interne de gestion de la propriété intellectuelle : réécriture du front-end d'AngularJS vers Angular, back-end Spring Boot, reprise des règles métier et tests de non-régression."
       # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Rolex
@@ -61,7 +61,7 @@ experience:
         color: "#A259FF"
     - position: "Spécialiste Ksuite"
       date: "Oct 2023 - Jan 2024"
-      # impact: "[À COMPLÉTER : impact en une ligne]"
+      impact: "Support utilisateurs kSuite : gestion des tickets et des appels, remontée des problèmes récurrents aux développeurs et propositions d'amélioration."
       # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Infomaniak
@@ -70,7 +70,7 @@ experience:
         color: "#5E6AD2"
     - position: "Sales trader"
       # date: "[À COMPLÉTER : dates]"
-      # impact: "[À COMPLÉTER : impact en une ligne]"
+      impact: "Assistance clients sur les opérations bancaires et les problèmes informatiques, gestion des tickets et des appels, conseil et formation sur les produits et services financiers."
       # metric: "[À COMPLÉTER : métrique]"
       company:
         name: FlowBank
