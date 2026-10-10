@@ -1,7 +1,7 @@
 title: Lucas Hage
 description: Site vitrine pour un bijoutier, avec prise de rendez-vous et newsletter.
 category: client
-metric: "[À COMPLÉTER : métrique]"
+# metric: "[À COMPLÉTER : métrique]"
 image: /projects/lucas-hage.jpg
 url: https://lucas-hage.com
 tags: ["WordPress"]

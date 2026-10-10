@@ -64,7 +64,7 @@ export default defineContentConfig({
         experience: createBaseSchema().extend({
           items: z.array(z.object({
             // Texte libre (« Fév 2026 - Juil 2026 », « été 2025 »)
-            date: z.string(),
+            date: z.string().optional(),
             position: z.string(),
             impact: z.string().optional(),
             metric: z.string().optional(),

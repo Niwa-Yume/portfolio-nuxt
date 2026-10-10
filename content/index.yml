@@ -17,9 +17,9 @@ hero:
 about:
   title: "À propos de moi"
   description: |
-    Mon parcours, de l’horlogerie de luxe chez Rolex à la finance chez FlowBank, en passant par Infomaniak et son univers technologique, m’a appris une chose essentielle : le temps est l’actif le plus précieux.
-    C’est pourquoi aujourd’hui, en tant qu’architecte de solutions digitales, ma mission est simple
-    - vous en faire gagner !
+    Développeur full-stack basé à Genève, j'ai travaillé à la Digital Factory d'Audemars Piguet et chez Rolex. Mon parcours passe aussi par la finance chez FlowBank, par Infomaniak et par l'OCSIN (État de Genève).
+    Diplômé de CREA Genève en développement web et application, je construis des applications de bout en bout, de l'API NestJS à l'interface React, Angular ou Vue. En parallèle, je développe GVA Watchmaking Guide, un guide des lieux et événements horlogers de Genève.
+    Ces expériences m'ont appris une chose essentielle : le temps est l'actif le plus précieux.
 experience:
   title: Expérience professionnelle
   description: ""
@@ -27,7 +27,7 @@ experience:
     - position: "Développeur full-stack, Digital Factory"
       date: "Fév 2026 - Juil 2026"
       impact: "Application interne full-stack NestJS/React, intégration API gateway et ERP, authentification Azure AD."
-      metric: "[À COMPLÉTER : métrique]"
+      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Audemars Piguet
         logo: "https://www.audemarspiguet.com/etc.clientlibs/ap-com/ui/clientlibs/publish/resources/static/favicon-96x96.png"
@@ -35,8 +35,8 @@ experience:
         color: "#9A8A5B"
     - position: "Full stack developer"
       date: "été 2025"
-      impact: "[À COMPLÉTER : impact en une ligne]"
-      metric: "[À COMPLÉTER : métrique]"
+      # impact: "[À COMPLÉTER : impact en une ligne]"
+      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Rolex
         logo: "/logo/rolex.png"
@@ -44,8 +44,8 @@ experience:
         color: "#00DC82"
     - position: "Stagiaire Développeur"
       date: "Sep 2024 - Jan 2025"
-      impact: "[À COMPLÉTER : impact en une ligne]"
-      metric: "[À COMPLÉTER : métrique]"
+      # impact: "[À COMPLÉTER : impact en une ligne]"
+      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Rolex
         logo: "/logo/rolex.png"
@@ -53,33 +53,33 @@ experience:
         color: "#00DC82"
     - position: "Fondateur"
       date: "Sep 2023 - Jun 2025"
-      impact: "[À COMPLÉTER : impact en une ligne]"
-      metric: "[À COMPLÉTER : métrique]"
+      impact: "Plateforme qui référence les événements de Genève et en organise avec des boîtes de nuit genevoises."
+      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Noctinium
         logo: "/projects/logo-noctinium.png"
         color: "#A259FF"
     - position: "Spécialiste Ksuite"
       date: "Oct 2023 - Jan 2024"
-      impact: "[À COMPLÉTER : impact en une ligne]"
-      metric: "[À COMPLÉTER : métrique]"
+      # impact: "[À COMPLÉTER : impact en une ligne]"
+      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Infomaniak
         logo: "/logo/k-icon-blue-background.svg"
         url: "https://www.infomaniak.com/"
         color: "#5E6AD2"
     - position: "Sales trader"
-      date: "[À COMPLÉTER : dates]"
-      impact: "[À COMPLÉTER : impact en une ligne]"
-      metric: "[À COMPLÉTER : métrique]"
+      # date: "[À COMPLÉTER : dates]"
+      # impact: "[À COMPLÉTER : impact en une ligne]"
+      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: FlowBank
         logo: "i-lucide-landmark"
         url: "https://www.flowbank.com/"
     - position: "Gestionnaire logistique"
-      date: "[À COMPLÉTER : dates]"
-      impact: "[À COMPLÉTER : impact en une ligne]"
-      metric: "[À COMPLÉTER : métrique]"
+      # date: "[À COMPLÉTER : dates]"
+      # impact: "[À COMPLÉTER : impact en une ligne]"
+      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: "OCSIN (État de Genève)"
         logo: "https://www.ge.ch/themes/custom/gech_front/favicon.ico"
@@ -109,9 +109,15 @@ faq:
   categories:
     - title: Recrutement
       questions:
+        - label: Quel poste recherchez-vous ?
+          content: "Un poste de développeur full-stack en CDI à Genève, idéalement dans l'horlogerie, le luxe ou une grande entreprise IT."
         - label: Quand êtes-vous disponible ?
-          content: "[À COMPLÉTER : date de disponibilité]"
+          content: "Je suis ouvert aux opportunités en CDI. Écrivez-moi pour convenir d'une date de démarrage."
+        - label: Quelle est votre stack ?
+          content: "NestJS, TypeScript, React, Angular, Vue/Nuxt, MongoDB/Prisma, Azure/MSAL et Java Spring Boot."
+        - label: Quelle est votre formation ?
+          content: "Bachelor en développement web et application à CREA Genève (2026)."
         - label: Quelles langues parlez-vous ?
-          content: "Français, anglais (C1) et espagnol ([À COMPLÉTER : niveau])."
+          content: "Français, anglais (C1) et espagnol."
         - label: Avez-vous besoin d'un permis de travail en Suisse ?
           content: "Non. J'ai les nationalités suisse et espagnole, aucun permis de travail n'est nécessaire."

@@ -1,7 +1,7 @@
 title: The Head Spa Switzerland
 description: Refonte du site WordPress d'un spa haut de gamme en Suisse, avec réservation en ligne et galerie photo.
 category: client
-metric: "[À COMPLÉTER : métrique]"
+# metric: "[À COMPLÉTER : métrique]"
 image: /projects/the-head-spa.jpg
 url: https://theheadspaswitzerland.ch/
 tags: ["WordPress", "Elementor"]

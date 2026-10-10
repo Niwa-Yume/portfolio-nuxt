@@ -50,12 +50,11 @@ useSeoMeta({
           class="flex items-center gap-2"
         >
           <UButton
-            :label="page.links[0]?.label"
-            :to="global.meetingLink"
+            :to="`mailto:${global.email}`"
             v-bind="page.links[0]"
           />
           <UButton
-            :to="`mailto:${global.email}`"
+            to="/#parcours"
             v-bind="page.links[1]"
           />
         </div>

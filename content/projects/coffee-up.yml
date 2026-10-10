@@ -1,7 +1,7 @@
 title: Coffee UP
 description: Maintenance et support du site WordPress de Coffee UP, premier coffee shop de spécialité en Suisse dédié à l'horlogerie.
 category: client
-metric: "[À COMPLÉTER : métrique]"
+# metric: "[À COMPLÉTER : métrique]"
 image: /projects/coffee-up-salon.jpg
 url: https://www.coffeeupge.com/
 tags: ["WordPress"]

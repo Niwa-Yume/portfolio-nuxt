@@ -1,6 +1,8 @@
 title: Concevoir des interfaces, créer des expériences.
 description: J'ai travaillé sur une variété de projets, en me concentrant sur la création d'expériences numériques intuitives où un design réfléchi rencontre un code soigné. Voici quelques réalisations dont je suis fier, illustrant mon processus du concept à l'exécution.
 links:
-  - label: "Prenons RDV !"
+  - label: "Me contacter"
+    icon: i-lucide-mail
+  - label: "Voir mon parcours"
     color: "neutral"
-  - label: 'Envoyez-moi un mail !'
+    variant: subtle

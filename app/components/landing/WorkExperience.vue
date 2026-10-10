@@ -67,7 +67,10 @@ function isPath(v?: string) {
               >{{ experience.company.name }}</span>
               <span class="text-muted font-normal"> · {{ experience.position }}</span>
             </h3>
-            <p class="shrink-0 text-sm text-muted">
+            <p
+              v-if="experience.date"
+              class="shrink-0 text-sm text-muted"
+            >
               {{ experience.date }}
             </p>
           </div>
