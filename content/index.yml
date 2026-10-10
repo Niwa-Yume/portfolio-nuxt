@@ -1,138 +1,116 @@
 seo:
-  title: "Julien Castro - Artisan du Numérique"
-  description: "J'optimise votre temps en créant des solutions digitales sur-mesure. Je suis Julien Castro, partenaire de confiance pour les entreprises et particuliers exigeants. Ma spécialité : concevoir des sites web et applications élégants, et automatiser vos processus pour vous libérer des tâches chronophages."
-title: "Julien Castro - Artisan du Numérique"
-description: "J'optimise votre temps en créant des solutions digitales sur-mesure. Je suis Julien Castro, partenaire de confiance pour les entreprises et particuliers exigeants. Ma spécialité : concevoir des sites web et applications élégants, et automatiser vos processus pour vous libérer des tâches chronophages."
+  title: "Julien Castro — Développeur full-stack, horlogerie & luxe · Genève"
+  description: "Julien Castro, développeur full-stack basé à Genève. Expériences chez Rolex et Audemars Piguet. NestJS, TypeScript, React, Angular, Vue/Nuxt."
+title: "Julien Castro"
+description: "Développeur full-stack. Rolex, Audemars Piguet. Je construis des outils web pour l'horlogerie et le luxe."
 hero:
+  location: Genève
   links:
-    - label: "Voir mon Github"
-      to: https://github.com/Niwa-Yume
-      color: "neutral"
-  images:
-    - src: https://cryptomcdo.com/wp-content/uploads/Bitcoin_.webp
-      alt: Random Image 1
-    - src: https://images.pexels.com/photos/29406740/pexels-photo-29406740.jpeg?cs=srgb&dl=pexels-jonathanborba-29406740.jpg&fm=jpg
-      alt: Random Image 2
-    - src: https://wallpapers.com/images/hd/ufc-4k-1auces3g7disgqtt.jpg
-      alt: Random Image 3
-    - src: https://gameranx.com/wp-content/uploads/2016/03/Dark-Souls-3-4K-Wallpaper.jpg
-      alt: Random Image 4
-    - src: https://media.gq-magazine.co.uk/photos/6138798a50db6a7355282929/16:9/w_1920,h_1080,c_limit/080921_Foulkes.jpg
-      alt: Random Image 5
-    - src: https://images.unsplash.com/photo-1586165368502-1bad197a6461?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hlc3N8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000
-      alt: Random Image 6
-    - src: https://plus.unsplash.com/premium_photo-1664299231810-29d1caf6f753?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG90YWdlcnxlbnwwfHwwfHx8MA%3D%3D
-      alt: Random Image 7
-    - src: https://w0.peakpx.com/wallpaper/863/398/HD-wallpaper-grateful-miyamoto-musashi-slam-dunk-takehiko-inoue-vagabond.jpg
-      alt: Random Image 8
-    - src: https://wallpaper.forfun.com/fetch/47/47733d0f9ee194a5f58b5ef776269265.jpeg
-      alt: Random Image 9
+    - label: Voir mon parcours
+      to: "#parcours"
+      icon: i-lucide-arrow-down
+    - label: Me contacter
+      to: "mailto:julien.castro@protonmail.com"
+      icon: i-lucide-mail
+      color: neutral
+      variant: subtle
 about:
-  title: "A propos de moi"
+  title: "À propos de moi"
   description: |
-    Mon parcours, de l’horlogerie de luxe chez Rolex à la finance chez FlowBank, en passant par Infomaniak et son univers technologique, m’a appris une chose essentielle : le temps est l’actif le plus précieux.
-    C’est pourquoi aujourd’hui, en tant qu’architecte de solutions digitales, ma mission est simple
-    - vous en faire gagner !
+    Développeur full-stack basé à Genève, j'ai travaillé à la Digital Factory d'Audemars Piguet et chez Rolex. Mon parcours passe aussi par la finance chez FlowBank, par Infomaniak et par l'OCSIN (État de Genève).
+    Diplômé de CREA Genève en développement web et application, je construis des applications de bout en bout, de l'API NestJS à l'interface React, Angular ou Vue. En parallèle, je développe GVA Watchmaking Guide, un guide des lieux et événements horlogers de Genève.
+    Ces expériences m'ont appris une chose essentielle : le temps est l'actif le plus précieux.
 experience:
-  title: Expérience professionel
+  title: Expérience professionnelle
+  description: ""
   items:
-    - position: "Consultant chargé de projet"
+    - position: "Développeur full-stack, Digital Factory"
       date: "Fév 2026 - Juil 2026"
+      impact: "Application interne full-stack NestJS/React, intégration API gateway et ERP, authentification Azure AD."
       company:
         name: Audemars Piguet
-        logo: "i-lucide-briefcase-business"
+        logo: "https://www.audemarspiguet.com/etc.clientlibs/ap-com/ui/clientlibs/publish/resources/static/favicon-96x96.png"
         url: "https://www.audemarspiguet.com/"
         color: "#9A8A5B"
     - position: "Full stack developer"
       date: "été 2025"
+      impact: "Poursuite de la mission de stage pendant deux mois d'été : modernisation de l'application de gestion de la propriété intellectuelle (Angular, Spring Boot)."
       company:
         name: Rolex
         logo: "/logo/rolex.png"
-        url: "http://www.rolex.com"
+        url: "https://www.rolex.com/"
         color: "#00DC82"
     - position: "Stagiaire Développeur"
       date: "Sep 2024 - Jan 2025"
+      impact: "Modernisation d'une application interne de gestion de la propriété intellectuelle : réécriture du front-end d'AngularJS vers Angular, back-end Spring Boot, reprise des règles métier et tests de non-régression."
       company:
         name: Rolex
         logo: "/logo/rolex.png"
-        url: "http://www.rolex.com"
+        url: "https://www.rolex.com/"
         color: "#00DC82"
     - position: "Fondateur"
       date: "Sep 2023 - Jun 2025"
+      impact: "Plateforme qui référence les événements de Genève et en organise avec des boîtes de nuit genevoises."
       company:
         name: Noctinium
-        logo: "i-simple-icons-raycast"
-        url: "https://noctinium.com"
+        logo: "/projects/logo-noctinium.png"
         color: "#A259FF"
     - position: "Spécialiste Ksuite"
       date: "Oct 2023 - Jan 2024"
+      impact: "Support utilisateurs kSuite : gestion des tickets et des appels, remontée des problèmes récurrents aux développeurs et propositions d'amélioration."
       company:
         name: Infomaniak
         logo: "/logo/k-icon-blue-background.svg"
-        url: "https://linear.app"
+        url: "https://www.infomaniak.com/"
         color: "#5E6AD2"
+    - position: "Sales trader"
+      date: "Fév 2023"
+      impact: "Conseil et formation des clients sur les produits et services financiers, accompagnement sur les opérations bancaires et gestion des demandes par ticket et par téléphone."
+      company:
+        name: FlowBank
+        logo: "i-lucide-landmark"
+        url: "https://www.flowbank.com/"
+    - position: "Gestionnaire logistique"
+      # date: "[À COMPLÉTER : dates]"
+      impact: "Gestion et mise en patrimoine du matériel informatique."
+      company:
+        name: "OCSIN (État de Genève)"
+        logo: "https://www.ge.ch/themes/custom/gech_front/favicon.ico"
+        url: "https://www.ge.ch/"
+projects:
+  title: Produits
+  description: Ce que je construis et maintiens.
 testimonials:
   - quote: |
       Julien a fait preuve d’une grande autonomie et d’un excellent esprit d’équipe lors de son stage chez Rolex. Il a su apprendre rapidement, résoudre les problèmes par lui-même et s’investir pleinement dans chaque mission. Sa curiosité et sa bonne volonté ont été très appréciées au sein de l’équipe. Je recommande Julien sans hésitation pour toute future opportunité.
     author:
       name: "Jean-Christophe Plessis"
       description: "Senior Software Developer Team Lead chez Rolex"
-      avatar:
-        src: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
   - quote: |
       Julien a su comprendre l'identité de The Head Spa et la retranscrire parfaitement dans notre nouveau webdesign. Son écoute, sa créativité et sa réactivité ont permis de donner une nouvelle dimension à notre site. Je recommande vivement Julien pour tout projet digital !
     author:
       name: "Céline"
       description: "Fondatrice de The Head Spa"
-      avatar:
-        src: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
   - quote: |
       Grâce à l’automatisation mise en place par Julien, la gestion des conventions de stage à CREA est devenue simple et rapide. Son expertise sur n8n et son accompagnement ont permis de gagner un temps précieux et d’éviter les erreurs manuelles. Un vrai plus pour notre équipe pédagogique !
     author:
       name: "L'équipe pédagogique de CREA"
+      initials: "CR"
       description: "École CREA Genève"
-      avatar:
-        src: 'https://yt3.googleusercontent.com/ekca7k8LWS06F9qn3Qm7asW0kaP2_eeJtSTLWxNmvioDINssdiS4hxKoztGvtEZM15eUiKK16w=s900-c-k-c0x00ffffff-no-rj'
-        srcset: 'https://yt3.googleusercontent.com/ekca7k8LWS06F9qn3Qm7asW0kaP2_eeJtSTLWxNmvioDINssdiS4hxKoztGvtEZM15eUiKK16w=s900-c-k-c0x00ffffff-no-rj'
-blog:
-  title: "Les derniers articles"
-  description: "Certaines de mes pensées"
 faq:
   title: Questions fréquentes
-  description: Réponses aux questions courantes sur mon processus et mes services.
   categories:
-    - title: Services & Processus
+    - title: Recrutement
       questions:
-        - label: Quels services proposez-vous ?
-          content: |
-            Je suis spécialisé dans le développement web, application et en Automatisation des processus. Cela inclut la recherche utilisateur, la création de wireframes, le prototypage interactif, la conception d’interfaces intuitives, la réalisation de sites web et d’applications web responsives. Mon objectif est de créer des expériences digitales fluides, de la conception au déploiement.
-        - label: Quelle est votre méthodologie de travail ?
-          content: |
-            Mon approche est collaborative et itérative, comprenant généralement les étapes suivantes : découverte & recherche, idéation & prototypage, tests utilisateurs, design visuel, et collaboration étroite avec les équipes de développement lors de l’implémentation. J’adapte le processus selon les besoins du projet, en gardant toujours l’utilisateur au centre des solutions.
-        - label: Travaillez-vous avec des startups ?
-          content: |
-            Absolument ! J’aime accompagner les startups pour façonner leur vision produit et créer des interfaces conviviales dès le départ. Je peux adapter ma méthode à l’environnement dynamique et rapide des startups.
-    - title: Tarifs & Délais
-      questions:
-        - label: Combien coûte généralement un projet ?
-          content: |
-            Les coûts varient selon la portée, la complexité, les fonctionnalités et le délai. Pour des projets complets de design UX/UI et développement front-end, mes prestations débutent autour de 1 000 CHF, avec une moyenne entre 2 000 CHF et 20 000 CHF. Pour du conseil ou des missions spécifiques, mon tarif journalier est de 600 CHF.
-        - label: Quelles sont vos conditions de paiement ?
-          content: |
-            Je demande généralement un acompte de 40 % pour planifier et démarrer le projet, le solde de 60 % étant dû à la livraison et validation finale. Les paiements se font par virement bancaire ou via Stripe.
-        - label: Combien de temps dure un projet en moyenne ?
-          content: |
-            Les délais dépendent fortement de la taille et de la complexité du projet. Les petits projets prennent 3 à 4 semaines, tandis que les plus ambitieux peuvent durer de 2 à 4 mois. Je fournis toujours un planning détaillé après la phase de découverte initiale.
-        - label: Proposez-vous des forfaits ou un accompagnement continu ?
-          content: |
-            Oui, pour les clients ayant besoin d’un suivi régulier, de développement de nouvelles fonctionnalités ou de maintenance, je propose des forfaits mensuels adaptés. Discutons-en si cela vous intéresse !
-    - title: À propos de moi
-      questions:
-        - label: Qu’est-ce qui vous passionne le plus dans votre métier ?
-          content: |
-            J’adore relever le défi de résoudre des problèmes complexes grâce à la technologie et l'automatisation. Voir les utilisateurs interagir avec mes créations et les trouver vraiment utiles et agréables est très gratifiant. Faire le lien entre les besoins des utilisateurs et les possibilités techniques, c’est ce qui me motive au quotidien.
-        - label: Quels sont vos loisirs en dehors du travail ?
-          content: |
-            Quand je ne conçois ou ne code pas, j’aime explorer la culture japonaise, découvrir de nouveaux manga et webtoon et faire randonner dans la région. Je suis aussi passionné de champignons, finance, F1, blockchain et je contribue parfois à des projets.
+        - label: Quel poste recherchez-vous ?
+          content: "Un poste de développeur full-stack en CDI à Genève, idéalement dans l'horlogerie, le luxe ou une grande entreprise IT."
+        - label: Quand êtes-vous disponible ?
+          content: "Je suis ouvert aux opportunités en CDI. Écrivez-moi pour convenir d'une date de démarrage."
+        - label: Quelle est votre stack ?
+          content: "NestJS, TypeScript, React, Angular, Vue/Nuxt, MongoDB/Prisma, Azure/MSAL et Java Spring Boot."
+        - label: Quelle est votre formation ?
+          content: "Bachelor en développement web et application à CREA Genève (2026)."
+        - label: Quelles langues parlez-vous ?
+          content: "Français, anglais (C1) et espagnol."
+        - label: Avez-vous besoin d'un permis de travail en Suisse ?
+          content: "Non. J'ai les nationalités suisse et espagnole, aucun permis de travail n'est nécessaire."

@@ -1,9 +1,9 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: '/logo-juju-dev.png',
-      light: '/logo-juju-dev.png',
-      alt: 'Ma photo de profil'
+      dark: '/portrait.png',
+      light: '/portrait.png',
+      alt: 'Portrait de Julien Castro'
     },
     meetingLink: 'https://cal.com/julien.castro/30min',
     email: 'julien.castro@protonmail.com',
@@ -23,11 +23,14 @@ export default defineAppConfig({
     }
   },
   footer: {
-    credits: `Built with Nuxt UI • © ${new Date().getFullYear()}`,
+    credits: `© ${new Date().getFullYear()} Julien Castro`,
     colorMode: false,
     links: [
-      { label: 'GitHub', to: 'https://github.com/Niwa-Yume', icon: 'i-simple-icons-github' },
+      { label: 'GitHub', to: 'https://github.com/Niwa-Yume', icon: 'i-simple-icons-github', target: '_blank' },
+      { label: 'LinkedIn', to: 'https://www.linkedin.com/in/julien-castro/', icon: 'i-simple-icons-linkedin', target: '_blank' },
       { label: 'Email', to: 'mailto:julien.castro@protonmail.com', icon: 'i-lucide-mail' }
-    ]
+    ],
+    // Bloc « Par le même auteur »
+    sameAuthor: { label: 'GVA Watchmaking Guide', to: 'https://gvawatchguide.ch' }
   }
 })

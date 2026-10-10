@@ -1,0 +1,5 @@
+title: Automatisation du scraping des stages LinkedIn
+description: Création d'un workflow N8N automatisé pour scraper, trier et organiser tous les stages disponibles sur LinkedIn dans la région de Genève en fichier Excel pour l'école CREA.
+tags: ["n8n", "Automatisation"]
+date: "2024"
+category: perso

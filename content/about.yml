@@ -1,11 +1,11 @@
-title: A propos de moi
+title: À propos de moi
 description: Découvrez mon parcours entre technologie, design et stratégie digitale, et ma passion pour les solutions qui font gagner du temps.
 content: |
-  Salut, moi c’est Julien Castro, Architecte de solutions digitales basé à Genève.
-  Mon parcours m’a conduit de l’horlogerie de luxe chez Rolex à la finance chez FlowBank, en passant par Infomaniak et son univers de solutions technologiques éthiques.
+  Salut, moi c’est Julien Castro, développeur full-stack basé à Genève.
+  Mon parcours m’a conduit de l’horlogerie de luxe chez Rolex et à la Digital Factory d’Audemars Piguet à la finance chez FlowBank, en passant par Infomaniak et son univers de solutions technologiques éthiques, et par l’OCSIN (État de Genève).
   Ces expériences m’ont appris une chose essentielle : le temps est le véritable actif. Aujourd’hui, ma mission est d’en faire gagner aux autres en concevant des solutions intelligentes, automatisées et agréables à utiliser.
 
-  Diplômé de CREA Omnes Éducation Genève en développement web et application, j’ai développé une approche à la fois créative, analytique et orientée impact, à la croisée du design, de la tech et du business.
+  Diplômé d’un Bachelor en développement web et application à CREA Omnes Éducation Genève (2026), j’ai développé une approche à la fois créative, analytique et orientée impact, à la croisée du design, de la tech et du business.
 
   ### Ma philosophie
 
@@ -27,9 +27,8 @@ content: |
   - 💻 **Blockchain, manga et webtoons** – curiosité et exploration des mondes (réels ou numériques).
 
   Merci d’être passé par ici.
-  Découvrez mes [projets](/projects) ou [contactez-moi](mailto:julien.castro@protonmail.com) pour créer ensemble des expériences qui ont du sens.
+  Découvrez mes [projets](/projects), mon [parcours](/#parcours) ou [contactez-moi](mailto:julien.castro@protonmail.com).
 images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: Mon espace de travail café à Genève
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: Un voyage inspirant à Tokyo
+  - src: https://www.coffeeupge.com/wp-content/uploads/2026/07/Tezza-2447.jpeg
+    alt: Salon boisé du Coffee UP à Genève, avec banquette, coussins et étagères éclairées
+    caption: Coffee UP, Genève

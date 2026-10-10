@@ -16,6 +16,11 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  // L'ancienne URL /offers reste valide (liens partagés, indexation)
+  routeRules: {
+    '/offers': { redirect: { to: '/offres', statusCode: 301 } }
+  },
+
   compatibilityDate: '2024-11-01',
 
   nitro: {
@@ -34,5 +39,10 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  image: {
+    // Images distantes autorisées à passer par l'optimiseur (redimensionnement + WebP)
+    domains: ['www.coffeeupge.com']
   }
 })

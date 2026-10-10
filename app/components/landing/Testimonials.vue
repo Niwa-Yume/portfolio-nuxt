@@ -1,9 +1,18 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
 
+type Testimonial = IndexCollectionItem['testimonials'][number]
+type Author = Testimonial['author']
+
+// Utilisé sur la home et sur /offres
 defineProps<{
-  page: IndexCollectionItem
+  testimonials: Testimonial[]
 }>()
+
+// Pas de photo inventée : initiales dérivées du nom (ou forcées via `initials`)
+function initialsOf(author: Author) {
+  return author.initials ?? author.name.split(/\s+/).map(word => word[0]).join('').slice(0, 2).toUpperCase()
+}
 </script>
 
 <template>
@@ -14,7 +23,7 @@ defineProps<{
   >
     <UCarousel
       v-slot="{ item }"
-      :items="page.testimonials"
+      :items="testimonials"
       :autoplay="{ delay: 4000 }"
       loop
       dots
@@ -32,7 +41,9 @@ defineProps<{
         }"
       >
         <UUser
-          v-bind="item.author"
+          :name="item.author.name"
+          :description="item.author.description"
+          :avatar="{ 'text': initialsOf(item.author), 'aria-hidden': 'true' }"
           size="xl"
           class="justify-center"
         />

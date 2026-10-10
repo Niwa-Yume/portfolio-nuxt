@@ -1,6 +1,7 @@
 title: Ressource Hub
-description: Projet de ressource pour les étudiants, développeur et les startups.
-image: "/Projet/ressource-hub.png"
+description: Annuaire de ressources pour les étudiants, les développeurs et les startups.
+image: "/projects/ressource-hub.jpg"
 url: "https://ressource-directory.vercel.app/"
-tags: ["Projet opensource", "UI Design", "Mobile App"]
+tags: ["React", "Vite", "Tailwind CSS", "Supabase"]
 date: "2026"
+category: perso

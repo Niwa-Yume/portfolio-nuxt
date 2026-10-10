@@ -10,17 +10,17 @@ if (!page.value) {
   })
 }
 
-const { data: projects } = await useAsyncData('projects', async () => {
-  const list = await queryCollection('projects').all()
-  return list.sort((a, b) => {
-    const da = a?.date ? new Date(a.date).getTime() : 0
-    const db = b?.date ? new Date(b.date).getTime() : 0
-    return db - da // plus récent d'abord
-  })
-})
+const [{ data: produits }, { data: clients }, { data: perso }] = await Promise.all([
+  useProjects('produit'),
+  useProjects('client'),
+  useProjects('perso')
+])
 
-import { computed } from 'vue'
-const projectsList = computed(() => projects?.value ?? [])
+const sections = computed(() => [
+  { id: 'produits', title: 'Produits', description: 'Ce que je construis et maintiens.', items: produits.value },
+  { id: 'clients', title: 'Travail client', description: 'Sites réalisés ou maintenus pour des clients.', items: clients.value },
+  { id: 'perso', title: 'Projets personnels & école', description: 'Expérimentations, projets entrepreneuriaux et projets réalisés pendant mes études.', items: perso.value }
+])
 
 const { global } = useAppConfig()
 
@@ -50,65 +50,40 @@ useSeoMeta({
           class="flex items-center gap-2"
         >
           <UButton
-            :label="page.links[0]?.label"
-            :to="global.meetingLink"
+            :to="`mailto:${global.email}`"
             v-bind="page.links[0]"
           />
           <UButton
-            :to="`mailto:${global.email}`"
+            to="/#parcours"
             v-bind="page.links[1]"
           />
         </div>
       </template>
     </UPageHero>
     <UPageSection
+      v-for="section in sections"
+      :id="section.id"
+      :key="section.id"
+      :title="section.title"
+      :description="section.description"
       :ui="{
-        container: '!pt-0'
+        container: '!pt-0',
+        title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
+        description: 'text-left mt-2 text-sm text-muted'
       }"
     >
       <Motion
-        v-for="(project, index) in projectsList"
-        :key="project.title ?? index"
+        v-for="(project, index) in section.items"
+        :key="project.id"
         :initial="{ opacity: 0, transform: 'translateY(10px)' }"
         :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
-        :transition="{ delay: 0.2 * index }"
+        :transition="{ delay: 0.1 * index }"
         :in-view-options="{ once: true }"
       >
-        <UPageCard
-          :title="project.title ?? ''"
-          :description="project.description ?? ''"
-          :to="project?.url ?? ''"
-          orientation="horizontal"
-          variant="naked"
+        <ProjectCard
+          :project="project"
           :reverse="index % 2 === 1"
-          class="group"
-          :ui="{
-            wrapper: 'max-sm:order-last'
-          }"
-        >
-          <template #leading>
-            <span class="text-sm text-muted">
-              {{ project?.date ? new Date(project.date).getFullYear() : '' }}
-            </span>
-          </template>
-          <template #footer>
-            <ULink
-              :to="project?.url ?? ''"
-              class="text-sm text-primary flex items-center"
-            >
-              Voir le projet
-              <UIcon
-                name="i-lucide-arrow-right"
-                class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-              />
-            </ULink>
-          </template>
-          <img
-            :src="project?.image ?? ''"
-            :alt="project.title ?? ''"
-            class="object-cover w-full h-48 rounded-lg"
-          >
-        </UPageCard>
+        />
       </Motion>
     </UPageSection>
   </UPage>

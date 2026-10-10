@@ -8,6 +8,7 @@ const createBaseSchema = () => z.object({
 const createButtonSchema = () => z.object({
   label: z.string(),
   icon: z.string().optional(),
+  trailingIcon: z.string().optional(),
   to: z.string().optional(),
   color: z.enum(['primary', 'neutral', 'success', 'warning', 'error', 'info']).optional(),
   size: z.enum(['xs', 'sm', 'md', 'lg', 'xl']).optional(),
@@ -17,7 +18,8 @@ const createButtonSchema = () => z.object({
 
 const createImageSchema = () => z.object({
   src: z.string().editor({ input: 'media' }),
-  alt: z.string()
+  alt: z.string(),
+  caption: z.string().optional()
 })
 
 const createAuthorSchema = () => z.object({
@@ -26,7 +28,22 @@ const createAuthorSchema = () => z.object({
   username: z.string().optional(),
   twitter: z.string().optional(),
   to: z.string().optional(),
-  avatar: createImageSchema().optional()
+  initials: z.string().optional()
+})
+
+const createFaqSchema = () => z.object({
+  title: z.string(),
+  description: z.string().optional(),
+  categories: z.array(
+    z.object({
+      title: z.string().nonempty(),
+      questions: z.array(
+        z.object({
+          label: z.string().nonempty(),
+          content: z.string().nonempty()
+        })
+      )
+    }))
 })
 
 const createTestimonialSchema = () => z.object({
@@ -41,36 +58,28 @@ export default defineContentConfig({
       source: 'index.yml',
       schema: z.object({
         hero: z.object({
-          links: z.array(createButtonSchema()),
-          images: z.array(createImageSchema())
+          location: z.string(),
+          links: z.array(createButtonSchema())
         }),
         about: createBaseSchema(),
         experience: createBaseSchema().extend({
           items: z.array(z.object({
-            date: z.date(),
+            // Texte libre (« Fév 2026 - Juil 2026 », « été 2025 »)
+            date: z.string().optional(),
             position: z.string(),
+            impact: z.string().optional(),
+            metric: z.string().optional(),
             company: z.object({
               name: z.string(),
-              url: z.string(),
+              url: z.string().optional(),
               logo: z.string().editor({ input: 'icon' }),
-              color: z.string()
+              color: z.string().optional()
             })
           }))
         }),
         testimonials: z.array(createTestimonialSchema()),
-        blog: createBaseSchema(),
-        faq: createBaseSchema().extend({
-          categories: z.array(
-            z.object({
-              title: z.string().nonempty(),
-              questions: z.array(
-                z.object({
-                  label: z.string().nonempty(),
-                  content: z.string().nonempty()
-                })
-              )
-            }))
-        })
+        projects: createBaseSchema(),
+        faq: createFaqSchema()
       })
     }),
     projects: defineCollection({
@@ -79,58 +88,51 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
+        category: z.enum(['produit', 'client', 'perso']),
+        status: z.enum(['En ligne', 'En développement', 'Terminé']).optional(),
+        role: z.string().optional(),
+        metric: z.string().optional(),
+        image: z.string().editor({ input: 'media' }).optional(),
+        url: z.string().optional(),
+        // Stack technique
         tags: z.array(z.string()),
-        date: z.date()
-      })
-    }),
-    blog: defineCollection({
-      type: 'page',
-      source: 'blog/*.md',
-      schema: z.object({
-        minRead: z.number(),
-        date: z.date(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        author: createAuthorSchema()
+        date: z.string().optional(),
+        // Ordre d'affichage dans la section (croissant), puis date décroissante
+        order: z.number().optional()
       })
     }),
     pages: defineCollection({
       type: 'page',
-      source: [
-        { include: 'projects.yml' },
-        { include: 'blog.yml' }
-      ],
+      source: 'projects.yml',
       schema: z.object({
         links: z.array(createButtonSchema())
       })
     }),
-    speaking: defineCollection({
+    offres: defineCollection({
       type: 'page',
-      source: 'speaking.yml',
+      source: 'offres.yml',
       schema: z.object({
-        links: z.array(createButtonSchema()),
-        events: z.array(z.object({
-          category: z.enum(['Live talk', 'Podcast', 'Conference']),
-          title: z.string(),
-          date: z.date(),
-          location: z.string(),
-          url: z.string().optional()
-        }))
-      })
-    }),
-    offers: defineCollection({
-      type: 'page',
-      source: 'offers.yml',
-      schema: z.object({
+        proof: z.string().optional(),
         links: z.array(createButtonSchema()),
         offers: z.array(z.object({
           title: z.string(),
+          icon: z.string().editor({ input: 'icon' }),
           impact: z.string(),
           leverage: z.string(),
           description: z.string(),
+          reference: z.object({ label: z.string(), to: z.string() }).optional(),
           ctaLabel: z.string().optional()
-        }))
+        })),
+        process: createBaseSchema().extend({
+          steps: z.array(z.object({ title: z.string(), description: z.string() }))
+        }),
+        pricing: createBaseSchema().extend({
+          items: z.array(z.object({ label: z.string(), value: z.string(), note: z.string() })),
+          payment: z.string()
+        }),
+        testimonials: z.array(createTestimonialSchema()),
+        cta: createBaseSchema(),
+        faq: createFaqSchema()
       })
     }),
     about: defineCollection({
