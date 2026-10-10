@@ -3,7 +3,6 @@ description: Plateforme de révision pour les étudiants en première année de 
 category: produit
 status: En développement
 role: Développeur
-# metric: "[À COMPLÉTER : métrique]"
 image: /projects/medway.jpg
 url: https://mw-medway.ch/
 tags: ["React", "Vite", "Node.js", "Express", "Prisma", "PostgreSQL"]

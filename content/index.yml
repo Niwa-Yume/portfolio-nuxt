@@ -27,7 +27,6 @@ experience:
     - position: "Développeur full-stack, Digital Factory"
       date: "Fév 2026 - Juil 2026"
       impact: "Application interne full-stack NestJS/React, intégration API gateway et ERP, authentification Azure AD."
-      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Audemars Piguet
         logo: "https://www.audemarspiguet.com/etc.clientlibs/ap-com/ui/clientlibs/publish/resources/static/favicon-96x96.png"
@@ -36,7 +35,6 @@ experience:
     - position: "Full stack developer"
       date: "été 2025"
       impact: "Poursuite de la mission de stage pendant deux mois d'été : modernisation de l'application de gestion de la propriété intellectuelle (Angular, Spring Boot)."
-      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Rolex
         logo: "/logo/rolex.png"
@@ -45,7 +43,6 @@ experience:
     - position: "Stagiaire Développeur"
       date: "Sep 2024 - Jan 2025"
       impact: "Modernisation d'une application interne de gestion de la propriété intellectuelle : réécriture du front-end d'AngularJS vers Angular, back-end Spring Boot, reprise des règles métier et tests de non-régression."
-      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Rolex
         logo: "/logo/rolex.png"
@@ -54,7 +51,6 @@ experience:
     - position: "Fondateur"
       date: "Sep 2023 - Jun 2025"
       impact: "Plateforme qui référence les événements de Genève et en organise avec des boîtes de nuit genevoises."
-      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Noctinium
         logo: "/projects/logo-noctinium.png"
@@ -62,14 +58,13 @@ experience:
     - position: "Spécialiste Ksuite"
       date: "Oct 2023 - Jan 2024"
       impact: "Support utilisateurs kSuite : gestion des tickets et des appels, remontée des problèmes récurrents aux développeurs et propositions d'amélioration."
-      # metric: "[À COMPLÉTER : métrique]"
       company:
         name: Infomaniak
         logo: "/logo/k-icon-blue-background.svg"
         url: "https://www.infomaniak.com/"
         color: "#5E6AD2"
     - position: "Sales trader"
-      # date: "[À COMPLÉTER : dates]"
+      date: "Fév 2023"
       impact: "Conseil et formation des clients sur les produits et services financiers, accompagnement sur les opérations bancaires et gestion des demandes par ticket et par téléphone."
       company:
         name: FlowBank
@@ -77,7 +72,7 @@ experience:
         url: "https://www.flowbank.com/"
     - position: "Gestionnaire logistique"
       # date: "[À COMPLÉTER : dates]"
-      # impact: "[À COMPLÉTER : impact en une ligne]"
+      impact: "Gestion et mise en patrimoine du matériel informatique."
       company:
         name: "OCSIN (État de Genève)"
         logo: "https://www.ge.ch/themes/custom/gech_front/favicon.ico"
